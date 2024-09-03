@@ -41,11 +41,13 @@ export default function Navbar() {
                             <span className="nav-link text-black">TEACHING</span>
                         </Link>
                     </li>
+                    <li>
+                        <Link href="/Pictures">
+                            <span className="nav-link text-black">PICTURES</span>
+                        </Link>
+                    </li>
                 </ul>
             </div>
-            <a href="https://www.instagram.com/femmesetdroit/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/insta.png" alt="Instagram" className="instagram-icon w-8 h-8"/>
-            </a>
         </nav>
     );
 }
