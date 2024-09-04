@@ -13,7 +13,6 @@ const Books = () => {
                 <img src="/images/books/hypnosis-and-meditation.jpeg"/>
                 <img src="/images/books/placebo-talks.jpeg"/>
                 <img src="/images/books/psychology-of-magic.png"/>
-                <p>This is the Books page.</p>
             </main>
             <Footer/>
         </div>
