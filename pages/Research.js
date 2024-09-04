@@ -7,6 +7,7 @@ const Research = () => {
         <div>
             <Navbar/>
             <main className="main-content">
+                <p>https://onlinelibrary.wiley.com/doi/10.1002/ajh.27386?af=R</p>
             </main>
             <Footer />
         </div>
