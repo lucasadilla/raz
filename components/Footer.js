@@ -3,10 +3,13 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer>
-            <p>©Raz-Lab</p>
+        <footer className="footer">
+            <div className="footer-content">
+                <span>©Raz-Lab</span>
+            </div>
         </footer>
-    );
+)
+    ;
 };
 
 export default Footer;

@@ -8,8 +8,6 @@ export default function Home() {
             <Navbar />
             <main className="main-content">
                 <img src="/images/profile picture.JPG" alt="Banner" className="w-full h-auto"/>
-                <h1>Home Page</h1>
-                <p>This is the Home page.</p>
             </main>
             <Footer/>
         </div>

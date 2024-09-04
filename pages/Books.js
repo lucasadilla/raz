@@ -7,7 +7,6 @@ const Books = () => {
         <div>
             <Navbar/>
             <main className="main-content">
-                <h1>Books Page</h1>
                 <img src="/images/books/suggestibleBrain.png"/>
                 <img src="/images/books/casting-light-dark-side-imaging.png"/>
                 <img src="/images/books/how-not-to-train-your-brain.png"/>
