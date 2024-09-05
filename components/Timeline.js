@@ -17,11 +17,11 @@ export const Timeline = ({ data }) => {
 
     const { scrollYProgress } = useScroll({
         target: containerRef,
-        offset: ["start 35%", "end 90%"], // Adjusted to start earlier
+        offset: ["start 55%", "end 99%"],
     });
 
     const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
-    const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
+    const opacityTransform = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
     return (
         <div className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10" ref={containerRef}>
@@ -40,7 +40,11 @@ export const Timeline = ({ data }) => {
                             <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
                                 {item.date}
                             </h3>
-                            {item.content}
+                            {typeof item.content === 'string' ? (
+                                <div dangerouslySetInnerHTML={{ __html: item.content }} />
+                            ) : (
+                                item.content
+                            )}
                         </div>
                     </div>
                 ))}

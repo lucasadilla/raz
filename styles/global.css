@@ -17,15 +17,10 @@
 }
 
 .navbar a {
-    color: white;
+    color: #6c6cf3;
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s;
-}
-
-.navbar a:hover {
-    background-color: rgba(85, 85, 85, 0);
-    border-radius: 4px;
 }
 
 .main-content {
@@ -62,8 +57,8 @@
 
 .footer {
     margin-top: auto;
-    background-color: #eeede8;
-    color: #000000;
+    background-color: #6c6cf3;
+    color: #ffffff;
     padding: 1rem;
     text-align: center;
     width: 100%;
@@ -155,12 +150,19 @@
     margin-bottom: 1rem; /* Add space between the date and content */
 }
 
+.media-item h3 {
+    font-size: 1rem; /* Smaller font size for the date */
+    color: #666; /* Optional: change color for better readability */
+}
+
 .page-title {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
     background-color: #6c6cf3;
+    color: white;
+    padding: 1rem;
 }
 
 .main-content img {
@@ -169,4 +171,53 @@
     object-fit: cover; /* Ensure the image covers the entire area */
     border-radius: 8px;
     margin: 1rem;
+}
+
+.pictures-page img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+    border-radius: 8px; /* Optional: add border radius for styling */
+    margin: 1rem;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-content {
+    text-align: center;
+    flex: 1;
+    padding: 0 3rem; /* Add padding to create gap between buttons and image */
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 1rem 0;
+}
+
+.carousel-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-button {
+    left: 0; /* Position to the left */
+}
+
+.next-button {
+    right: 0; /* Position to the right */
 }

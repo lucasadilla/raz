@@ -12,14 +12,21 @@ const Breadcrumbs = () => {
                 <li>
                     <Link href="/">Home</Link>
                 </li>
-                {pathSegments.map((segment, index) => (
-                    <li key={index}>
-                        <span className="separator">/</span>
-                        <Link href={`/${pathSegments.slice(0, index + 1).join('/')}`}>
-                            {segment.replace(/-/g, ' ')}
-                        </Link>
-                    </li>
-                ))}
+                {pathSegments.map((segment, index) => {
+                    const path = `/${pathSegments.slice(0, index + 1).join('/')}`;
+                    return (
+                        <li key={index}>
+                            <span className="separator">/</span>
+                            {path === router.pathname ? (
+                                <span>{segment.replace(/-/g, ' ')}</span>
+                            ) : (
+                                <Link href={path}>
+                                    {segment.replace(/-/g, ' ')}
+                                </Link>
+                            )}
+                        </li>
+                    );
+                })}
             </ul>
         </div>
     );
