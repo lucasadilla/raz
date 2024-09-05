@@ -15,32 +15,32 @@ export default function Navbar() {
                     <ul className="flex space-x-4">
                         <li>
                             <Link href="/">
-                                <span className="nav-link nav-brand text-black">AMIR RAZ</span>
+                                <span className="nav-link nav-brand text-white">AMIR RAZ</span>
                             </Link>
                         </li>
                         <li>
                             <Link href="/Articles">
-                                <span className="nav-link text-black">ARTICLES</span>
+                                <span className="nav-link text-white">ARTICLES</span>
                             </Link>
                         </li>
                         <li>
                             <Link href="/Books">
-                                <span className="nav-link text-black">BOOKS</span>
+                                <span className="nav-link text-white">BOOKS</span>
                             </Link>
                         </li>
                         <li>
                             <Link href="/Media">
-                                <span className="nav-link text-black">MEDIA</span>
+                                <span className="nav-link text-white">MEDIA</span>
                             </Link>
                         </li>
                         <li>
                             <Link href="/Pictures">
-                                <span className="nav-link text-black">PICTURES</span>
+                                <span className="nav-link text-white">PICTURES</span>
                             </Link>
                         </li>
                         <li>
                             <Link href="/About">
-                                <span className="nav-link text-black">ABOUT</span>
+                                <span className="nav-link text-white">ABOUT</span>
                             </Link>
                         </li>
                     </ul>

@@ -17,7 +17,7 @@
 }
 
 .navbar a {
-    color: #6c6cf3;
+    color: #ffffff;
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s;
@@ -73,10 +73,11 @@
 
 /* styles/global.css */
 .breadcrumbs {
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: #f5f5f5;
     border-bottom: 1px solid #ddd;
     z-index: 999;
+    margin-bottom: 0;
 }
 
 .breadcrumbs ul {
@@ -166,8 +167,8 @@
 }
 
 .main-content img {
-    width: 200px; /* Set a fixed width */
-    height: 300px; /* Set a fixed height */
+    width: 400px; /* Set a fixed width */
+    height: 600px; /* Set a fixed height */
     object-fit: cover; /* Ensure the image covers the entire area */
     border-radius: 8px;
     margin: 1rem;
@@ -220,4 +221,33 @@
 
 .next-button {
     right: 0; /* Position to the right */
+}
+
+/* components/Timeline.css */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.timeline-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    margin: 1rem 0;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-line {
+    position: fixed; /* Ensure the line moves with the user */
+    left: 8px;
+    top: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent 0%, purple 10%, blue 90%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
 }

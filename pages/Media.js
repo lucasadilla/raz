@@ -13,53 +13,50 @@ const Media = () => {
         setMedia([
             {
                 date: "October, 2022",
-                content: `<a href="https://www.msch.us/education/2022-rosenthal-with-amir-raz/" target="_blank" rel="noreferrer noopener">Rosenthal with Amir Raz</a>`,
-                title: "Rosenthal with Amir Raz"
+                url: "https://www.msch.us/education/2022-rosenthal-with-amir-raz/",
+                title: "Rosenthal with Amir Raz",
+                image: "/images/media/amir.jpeg"
             },
             {
                 date: "December, 2021",
-                content: `<a href="https://news.chapman.edu/2021/12/15/chapmans-brain-institute-applies-modern-tools-of-neuroscience-to-answer-age-old-questions-of-free-will/" target="_blank" rel="noreferrer noopener">Chapman's Brain Institute Applies Modern Tools of Neuroscience to Answer Age-Old Questions of Free Will</a>`,
-                title: "Chapman's Brain Institute Applies Modern Tools of Neuroscience to Answer Age-Old Questions of Free Will"
+                url: "https://news.chapman.edu/2021/12/15/chapmans-brain-institute-applies-modern-tools-of-neuroscience-to-answer-age-old-questions-of-free-will/",
+                title: "Chapman's Brain Institute Applies Modern Tools of Neuroscience to Answer Age-Old Questions of Free Will",
+                image: "/images/media/chapman.jpg"
             },
             {
                 date: "August, 2021",
                 content: <VideoEmbed src="https://www.youtube.com/embed/vg540H9uHuA" title="YouTube Video" />,
-                title: "YouTube Video"
-            },
-            {
-                date: "August, 2021",
-                content: `<a href="https://www.listennotes.com/podcasts/finding-your-soul/brain-science-the-magic-and-cUv8T1WdQjp/" target="_blank" rel="noreferrer noopener">Finding Your Soul Podcast</a>`,
                 title: "Finding Your Soul Podcast"
             },
             {
                 date: "July, 2021",
-                content: `<a href="https://www.afarinesh.org/bbc-6-minute-2021-podcast-26/" target="_blank" rel="noreferrer noopener">BBC 6 Minute Podcast</a>`,
-                title: "BBC 6 Minute Podcast"
+                url: "https://www.afarinesh.org/bbc-6-minute-2021-podcast-26/",
+                title: "BBC 6 Minute Podcast",
+                image: "/images/media/bbc.jpg"
             },
             {
                 date: "October, 2020",
-                content: `<a href="https://news.chapman.edu/2020/10/15/brain-institute-researcher-finds-that-difficult-becomes-easy-thanks-to-hypnotic-suggestion/" target="_blank" rel="noreferrer noopener">Brain Institute Researcher Finds That Difficult Becomes Easy Thanks to Hypnotic Suggestion</a>`,
-                title: "Brain Institute Researcher Finds That Difficult Becomes Easy Thanks to Hypnotic Suggestion"
+                url: "https://news.chapman.edu/2020/10/15/brain-institute-researcher-finds-that-difficult-becomes-easy-thanks-to-hypnotic-suggestion/",
+                title: "Brain Institute Researcher Finds That Difficult Becomes Easy Thanks to Hypnotic Suggestion",
+                image: "/images/media/raz.jpg"
             },
             {
                 date: "February, 2020",
-                content: `<a href="https://orangereview.com/article/267/amir-raz-phd" target="_blank" rel="noreferrer noopener">Amir Raz PhD</a>`,
-                title: "Amir Raz PhD"
+                url: "https://orangereview.com/article/267/amir-raz-phd",
+                title: "Amir Raz PhD",
+                image: "/images/media/chapraz.png"
             },
             {
                 date: "March, 2019",
-                content: `<a href="https://www.ocbj.com/news/weekly-news/chapmans-brain-institute-gets-7m-funding/" target="_blank" rel="noreferrer noopener">Chapman's Brain Institute Gets $7M Funding</a>`,
-                title: "Chapman's Brain Institute Gets $7M Funding"
-            },
-            {
-                date: "March, 2019",
-                content: `<a href="https://news.chapman.edu/2019/03/05/brain-institute-receives-over-7-million-for-research-on-neurophilosophy-of-free-will/" target="_blank" rel="noreferrer noopener">Brain Institute Receives Over $7 Million for Research on Neurophilosophy of Free Will</a>`,
-                title: "Brain Institute Receives Over $7 Million for Research on Neurophilosophy of Free Will"
+                url: "https://news.chapman.edu/2019/03/05/brain-institute-receives-over-7-million-for-research-on-neurophilosophy-of-free-will/",
+                title: "Brain Institute Receives Over $7 Million for Research on Neurophilosophy of Free Will",
+                image: "/images/media/brain.jpg"
             },
             {
                 date: "June, 2018",
-                content: `<a href="https://www.bbc.co.uk/programmes/p069jncp" target="_blank" rel="noreferrer noopener">BBC Program</a>`,
-                title: "BBC Program"
+                url: "https://www.bbc.co.uk/programmes/p069jncp",
+                title: "BBC Program",
+                image: "/images/media/clock.jpg"
             },
             {
                 date: "April, 2018",
@@ -108,13 +105,15 @@ const Media = () => {
             },
             {
                 date: "September, 2016",
-                content: `<a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2016.01358/full" target="_blank" rel="noreferrer noopener">Frontiers in Psychology Article</a>`,
-                title: "Frontiers in Psychology Article"
+                url: "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2016.01358/full",
+                title: "Frontiers in Psychology Article",
+                image: "/images/media/psych.jpg"
             },
             {
                 date: "October, 2013",
-                content: `<a href="https://www.mcgill.ca/brain/research-discovery/brain-stories/prescribing-magic" target="_blank" rel="noreferrer noopener">Prescribing Magic</a>`,
-                title: "Prescribing Magic"
+                url: "https://www.mcgill.ca/brain/research-discovery/brain-stories/prescribing-magic",
+                title: "Prescribing Magic",
+                image: "/images/media/magic.jpg"
             },
             {
                 date: "October, 2013",
@@ -133,7 +132,7 @@ const Media = () => {
         <div>
             <Navbar />
             <main className="main-content">
-                <Timeline data={media} /> {/* Add the Timeline component */}
+                <Timeline data={media}/> {/* Add the Timeline component */}
             </main>
             <Footer />
         </div>
