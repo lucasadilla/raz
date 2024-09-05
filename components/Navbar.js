@@ -1,8 +1,14 @@
 // components/Navbar.js
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import PageTitle from './PageTitle';
 import Breadcrumbs from './Breadcrumbs';
 
 export default function Navbar() {
+    const router = useRouter();
+    const path = router.pathname;
+    const pageTitle = path === '/' ? 'Home' : path.replace('/', '').replace(/-/g, ' ').toUpperCase();
+
     return (
         <div>
             <nav className="bg-white p-4 flex justify-between items-center">
@@ -51,6 +57,7 @@ export default function Navbar() {
                     </ul>
                 </div>
             </nav>
+            <PageTitle title={pageTitle} />
             <Breadcrumbs />
         </div>
     );
