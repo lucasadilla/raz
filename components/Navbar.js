@@ -11,47 +11,47 @@ export default function Navbar() {
 
     return (
         <div>
-            <nav className="bg-white p-4 flex justify-between items-center">
+            <nav className="navbar"> {/* Apply the navbar class */}
                 <div className="flex items-center">
                     <ul className="flex space-x-4">
                         <li>
                             <Link href="/">
-                                <span className="nav-link text-black">HOME</span>
+                                <span className="nav-link text-white">HOME</span>
                             </Link>
                         </li>
                         <li>
                             <Link href="/About">
-                                <span className="nav-link text-black">ABOUT</span>
+                                <span className="nav-link text-white">ABOUT</span>
                             </Link>
                         </li>
                         <li>
                             <Link href="/Articles">
-                                <span className="nav-link text-black">ARTICLES</span>
+                                <span className="nav-link text-white">ARTICLES</span>
                             </Link>
                         </li>
                         <li>
                             <Link href="/Books">
-                                <span className="nav-link text-black">BOOKS</span>
+                                <span className="nav-link text-white">BOOKS</span>
                             </Link>
                         </li>
                         <li>
                             <Link href="/Media">
-                                <span className="nav-link text-black">MEDIA</span>
+                                <span className="nav-link text-white">MEDIA</span>
                             </Link>
                         </li>
                         <li>
                             <Link href="/Research">
-                                <span className="nav-link text-black">RESEARCH</span>
+                                <span className="nav-link text-white">RESEARCH</span>
                             </Link>
                         </li>
                         <li>
                             <Link href="/Teaching">
-                                <span className="nav-link text-black">TEACHING</span>
+                                <span className="nav-link text-white">TEACHING</span>
                             </Link>
                         </li>
                         <li>
                             <Link href="/Pictures">
-                                <span className="nav-link text-black">PICTURES</span>
+                                <span className="nav-link text-white">PICTURES</span>
                             </Link>
                         </li>
                     </ul>

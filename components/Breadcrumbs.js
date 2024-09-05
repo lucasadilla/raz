@@ -1,27 +1,27 @@
 // components/Breadcrumbs.js
-import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Breadcrumbs = () => {
     const router = useRouter();
-    const pathnames = router.pathname.split('/').filter((x) => x);
+    const pathSegments = router.pathname.split('/').filter(segment => segment);
 
     return (
-        <nav className="breadcrumbs">
+        <div className="breadcrumbs">
             <ul>
                 <li>
                     <Link href="/">Home</Link>
                 </li>
-                {pathnames.map((value, index) => {
-                    const href = '/' + pathnames.slice(0, index + 1).join('/');
-                    return (
-                        <li key={index}>
-                            <Link href={href}>{value}</Link>
-                        </li>
-                    );
-                })}
+                {pathSegments.map((segment, index) => (
+                    <li key={index}>
+                        <span className="separator">/</span>
+                        <Link href={`/${pathSegments.slice(0, index + 1).join('/')}`}>
+                            {segment.replace(/-/g, ' ')}
+                        </Link>
+                    </li>
+                ))}
             </ul>
-        </nav>
+        </div>
     );
 };
 

@@ -4,15 +4,16 @@
 @tailwind utilities;
 
 .navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #6c6cf3;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    margin-bottom: 0;
 }
 
 .navbar a {
@@ -23,13 +24,16 @@
 }
 
 .navbar a:hover {
-    background-color: #555;
+    background-color: rgba(85, 85, 85, 0);
     border-radius: 4px;
 }
 
 .main-content {
-    margin-top: 5rem; /* Adjust based on the height of the navbar */
-    padding: 1rem;
+    margin-top: 6rem; /* Adjust based on the height of the navbar */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
 }
 
 .banner img {
@@ -39,9 +43,11 @@
 }
 
 .video-embed {
-    margin: 1rem 0;
+    margin: 0 auto;
+    padding: 0;
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    width: 70%;
+    padding-bottom: 39.375%; /* 16:9 aspect ratio */
     height: 0;
 }
 
@@ -49,8 +55,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 60%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 .footer {
@@ -74,6 +81,7 @@
     padding: 1rem;
     background-color: #f5f5f5;
     border-bottom: 1px solid #ddd;
+    z-index: 999;
 }
 
 .breadcrumbs ul {
@@ -83,7 +91,8 @@
 }
 
 .breadcrumbs li {
-    display: inline;
+    display: flex;
+    align-items: center;
 }
 
 .breadcrumbs a {
@@ -93,6 +102,10 @@
 
 .breadcrumbs a:hover {
     text-decoration: underline;
+}
+
+.separator {
+    margin: 0 0.5rem;
 }
 
 .nav-link {
@@ -123,19 +136,37 @@
 
 /* styles/global.css */
 .media-item {
-    margin-bottom: 2rem; /* Add space between media items */
-    padding: 1rem;
-    border-bottom: 1px solid #ddd; /* Add a bottom border for separation */
+    width: 100%; /* Ensure media items take full width */
+    max-width: 1000px; /* Optional: limit the maximum width */
+    text-align: center; /* Center text inside media items */
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.media-item h2 {
+    font-size: 2rem; /* Make the title bigger */
+    margin-bottom: 1rem; /* Add space between the title and date */
 }
 
 .media-item p {
+    font-size: 1.25rem;
     font-weight: bold; /* Make the date bold */
-    margin-bottom: 0.5rem; /* Add space between the date and content */
+    margin-bottom: 1rem; /* Add space between the date and content */
 }
 
 .page-title {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    margin: 1rem 0;
+    margin: 0;
+    background-color: #6c6cf3;
+}
+
+.main-content img {
+    width: 200px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border-radius: 8px;
+    margin: 1rem;
 }
