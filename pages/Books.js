@@ -16,7 +16,7 @@ const Books = () => {
                             believe them. By learning about the art and science of suggestion, you can empower and
                             protect yourself, change your reality, boost your immunity, alter your physiology, help
                             others, and create social impact.</p>
-                        <p className="book-buy-link">Buy the book</p>
+                        <p className="book-buy-link">Available for purchase at:</p>
                         <p className="book-buy-image"><a href="https://www.amazon.com/Suggestible-Brain-Science-Magic-Minds-ebook/dp/B0CV431V8X"><img src="/images/books/logos/amazon.png"
                                                                        alt="Buy Now"/></a></p>
                         <p className="book-buy-image"><a href="https://www.hachettebookgroup.com/titles/amir-raz-phd/the-suggestible-brain/9780306833434/?lens=hachette-go"><img src="/images/books/logos/hachette.png"

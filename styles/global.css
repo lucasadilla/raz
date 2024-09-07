@@ -7,13 +7,17 @@
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #6c6cf3;
+    background-color: #0063c6;
     padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    margin-bottom: 0;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 1rem; /* Adjust the gap as needed */
 }
 
 .navbar a {
@@ -24,17 +28,68 @@
 }
 
 .main-content {
-    margin-top: 6rem; /* Adjust based on the height of the navbar */
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center; /* Center content horizontally */
+    background-color: #f0f4f8;
 }
 
 .banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.banner {
+    background-color: #ffffff; /* White background for the banner */
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px; /* Limit the width of the banner */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.banner h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.quote {
+    max-width: 700px; /* Adjust the width as needed */
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.banner-link {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner-link:hover {
+    text-decoration: underline;
 }
 
 .video-embed {
@@ -57,7 +112,7 @@
 
 .footer {
     margin-top: auto;
-    background-color: #6c6cf3;
+    background-color: #0062c4;
     color: #ffffff;
     padding: 1rem;
     text-align: center;
@@ -107,8 +162,9 @@
 .nav-link {
     position: relative;
     display: inline-block;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
+    font-size: 18px;
 }
 
 .nav-link::after {
@@ -127,28 +183,61 @@
 .nav-link:hover::after {
     width: 100%;
     left: 0;
-    background: #000000;
+    background: #ffffff;
 }
 
-/* styles/global.css */
-.media-item {
-    width: 100%; /* Ensure media items take full width */
-    max-width: 1000px; /* Optional: limit the maximum width */
-    text-align: center; /* Center text inside media items */
-    margin-bottom: 3rem;
+.media-page {
     padding: 2rem;
-    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f4f8; /* Light background color */
+}
+
+.media-item {
+    width: 100%;
+    max-width: 800px; /* Limit the maximum width */
+    background-color: #ffffff; /* White background for media items */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.media-item:hover {
+    transform: translateY(-10px); /* Slightly move the item up on hover */
 }
 
 .media-item h2 {
-    font-size: 2rem; /* Make the title bigger */
-    margin-bottom: 1rem; /* Add space between the title and date */
+    font-size: 24px; /* Larger font size for titles */
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .media-item p {
-    font-size: 1.25rem;
-    font-weight: bold; /* Make the date bold */
-    margin-bottom: 1rem; /* Add space between the date and content */
+    font-size: 16px; /* Smaller font size for dates */
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.media-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 10px;
+}
+
+.media-item a {
+    color: #0070f3;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.media-item a:hover {
+    color: #005bb5; /* Darker color on hover */
+    text-decoration: underline;
 }
 
 .media-item h3 {
@@ -161,17 +250,13 @@
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
-    background-color: #6c6cf3;
+    background-color: #0062c4;
     color: white;
     padding: 1rem;
 }
 
 .main-content img {
-    width: 400px; /* Set a fixed width */
-    height: 600px; /* Set a fixed height */
     object-fit: cover; /* Ensure the image covers the entire area */
-    border-radius: 8px;
-    margin: 1rem;
 }
 
 .pictures-page img {
@@ -182,28 +267,33 @@
     margin: 1rem;
 }
 
+.pictures-page {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f4f8; /* Light background color */
+}
+
 .carousel {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 2rem auto; /* Add margin for spacing */
     position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for rounded corners */
 }
 
 .carousel-content {
     text-align: center;
     flex: 1;
-    padding: 0 3rem; /* Add padding to create gap between buttons and image */
+    padding: 0 5rem; /* Add padding to create gap between buttons and image */
 }
 
-.carousel-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin: 1rem 0;
-}
 
 .carousel-button {
     background: none;
@@ -213,6 +303,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    color: #0070f3; /* Button color */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.carousel-button:hover {
+    color: #005bb5; /* Darker color on hover */
 }
 
 .prev-button {
@@ -223,7 +319,6 @@
     right: 0; /* Position to the right */
 }
 
-
 .book-item {
     display: flex;
     align-items: flex-start;
@@ -231,8 +326,16 @@
 }
 
 .book-item img {
+    width: 400px; /* Set a fixed width for the book image */
+    height: 600px; /* Set a fixed height for the book image */
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
     margin-right: 20px;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.book-item img:hover {
+    transform: translateY(-10px); /* Move the image up slightly on hover */
 }
 
 .book-image-bordered {
@@ -282,4 +385,211 @@
     padding: 20px;
     border: 1px solid #ddd; /* Add a thin border */
     border-radius: 8px; /* Optional: add border radius for styling */
+}
+
+.banner-book-image {
+    width: 100px; /* Adjust the size as needed */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.all-books-link {
+    color: #0070f3;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.all-books-link:hover {
+    color: #005bb5; /* Darker color on hover */
+    text-decoration: underline;
+}
+
+
+.about-banner {
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-text {
+    max-width: 800px;
+    font-size: 1.125rem;
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.timeline-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 4px;
+    background: linear-gradient(to bottom, #8cbbe6 0%, #185cbf 100%);
+    transition: height 0.1s ease-out, opacity 0.5s ease-in-out; /* Add opacity transition */
+    border-radius: 2px;
+    opacity: 0;
+}
+
+.timeline-line.visible {
+    opacity: 1; /* Fully visible */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 80px;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+}
+
+.timeline-item.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    background: grey;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: background 0.3s ease;
+}
+
+.timeline-item.passed::before {
+    background: #0070f3; /* Color when passed */
+}
+
+.timeline-date {
+    position: absolute;
+    left: -230px; /* Position the date to the left */
+    font-size: 3.25rem; /* Increase font size */
+    color: #333; /* Optional: change color for better readability */
+    margin-bottom: 0.5rem;
+    width: 60px; /* Ensure the date has enough space */
+    text-align: right; /* Align text to the right */
+}
+
+.timeline-content {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.timeline-content img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+}
+
+.timeline-content a {
+    color: #0070f3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.timeline-content a:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
+
+.articles-page {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f4f8; /* Light background color */
+}
+
+.article-item {
+    width: 100%;
+    max-width: 800px; /* Limit the maximum width */
+    background-color: #ffffff; /* White background for articles */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.article-item:hover {
+    transform: translateY(-10px); /* Slightly move the item up on hover */
+}
+
+.article-item h2 {
+    font-size: 24px; /* Larger font size for titles */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.article-item p {
+    font-size: 16px; /* Smaller font size for dates */
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.article-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 10px;
+}
+
+.article-item a {
+    color: #0070f3;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.article-item a:hover {
+    color: #005bb5; /* Darker color on hover */
+    text-decoration: underline;
+}
+
+.article-item h3 {
+    font-size: 1rem; /* Smaller font size for the date */
+    color: #666; /* Optional: change color for better readability */
 }

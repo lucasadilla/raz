@@ -1,10 +1,9 @@
-// pages/Media.js
 import { useEffect, useState } from "react";
-import { Timeline } from "../components/Timeline"; // Import the Timeline component
 import VideoEmbed from "../components/VideoEmbed";
 import SoundCloudEmbed from "../components/SoundCloudEmbed";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Timeline from "../components/Timeline";
 
 const Media = () => {
     const [media, setMedia] = useState([]);
@@ -15,7 +14,7 @@ const Media = () => {
                 date: "October, 2022",
                 url: "https://www.msch.us/education/2022-rosenthal-with-amir-raz/",
                 title: "Rosenthal with Amir Raz",
-                image: "/images/media/amir.jpeg"
+                image: "/images/media/raz.jpg"
             },
             {
                 date: "December, 2021",
@@ -131,8 +130,8 @@ const Media = () => {
     return (
         <div>
             <Navbar />
-            <main className="main-content">
-                <Timeline data={media}/> {/* Add the Timeline component */}
+            <main className="main-content media-page">
+                <Timeline data={media} />
             </main>
             <Footer />
         </div>
