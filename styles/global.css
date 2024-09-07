@@ -10,7 +10,7 @@
     background-color: #6c6cf3;
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 1000;
     margin-bottom: 0;
@@ -223,31 +223,63 @@
     right: 0; /* Position to the right */
 }
 
-/* components/Timeline.css */
-.timeline {
+
+.book-item {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
-.timeline-item {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    margin: 1rem 0;
+.book-item img {
+    margin-right: 20px;
+    border-radius: 8px;
 }
 
-.timeline-item.visible {
-    opacity: 1;
-    transform: translateY(0);
+.book-image-bordered {
+    border: 1px solid #ddd; /* Add a thin border */
 }
 
-.timeline-line {
-    position: fixed; /* Ensure the line moves with the user */
-    left: 8px;
-    top: 0;
-    width: 2px;
-    background: linear-gradient(to bottom, transparent 0%, purple 10%, blue 90%, transparent 100%);
-    mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+.book-description {
+    max-width: 400px;
+    font-size: 24px;
+    color: #333;
+    margin-top: 2rem;
+}
+
+.book-additional-text {
+    max-width: 400px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+.book-buy-link {
+    margin-top: 1rem;
+}
+
+.book-buy-link a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+.book-buy-link a:hover {
+    text-decoration: underline;
+}
+
+.book-buy-image {
+    margin-top: 1rem;
+}
+
+.book-buy-image img {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.book-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd; /* Add a thin border */
+    border-radius: 8px; /* Optional: add border radius for styling */
 }
