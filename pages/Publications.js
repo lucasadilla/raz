@@ -2,16 +2,16 @@ import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const Articles = () => {
-    const [articles, setArticles] = useState([]);
+const Publications = () => {
+    const [publications, setPublications] = useState([]);
 
     useEffect(() => {
-        setArticles([
+        setPublications([
             {
                 year: 2024,
                 content: `
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div><span><span>Achour, A., Knijnenburg, J., Koopmann, T., <strong>Raz, A</strong>., Tischkowitz, M.,<br>
         Coates, T.D., Baas, F. and Harteveld, C.L. (2024), Moderate–severe<br>
         beta-thalassemia intermedia phenotype caused by sextuplicated<br>
@@ -25,8 +25,8 @@ const Articles = () => {
             {
                 year: 2023,
                 content: `
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div>Psychology of Consciousness: Theory, Research, and Practice 9 (2), 159</div>
         <div></div>
         <div><span><span>Landry, M., Da Silva Castanheira, J., Milton, D., &amp; <strong>Raz, A.</strong> (2022).<br>
@@ -45,8 +45,8 @@ const Articles = () => {
             {
                 year: 2022,
                 content: `
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div>The rubber hand illusion: Top-down attention modulates embodiment</div>
         <div><span> R Thériault, M Landry, <strong>A Raz</strong></span></div>
         <div></div>
@@ -60,38 +60,38 @@ const Articles = () => {
             {
                 year: 2021,
                 content: `
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div>Landry, M., Da Silva Castanheira, J., Milton, D., &amp; <strong>Raz, A.</strong> (2021).<br>
         Suggestion alters Stroop automaticity: Hypnotic alexia through a proactive lens.<br>
         Psychology of Consciousness: Theory, Research, and Practice.<br>
         <strong><a href="#">doi</a><span>&nbsp;</span>|</strong><span>&nbsp;</span><a href="#" target="_blank" aria-label="undefined (opens in a new tab)" rel="noreferrer noopener"><strong>download</strong></a></div>
     </div>
 </article>
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div>Rémi Theriault, Jay Olson, Sonia Krol, <strong>Amir Raz</strong> (In Press).<br>
         Body Swapping with a Black Person Boosts Empathy: Using Virtual Reality to Embody Another.<br>
         Quarterly Journal of Experimental Psychology.</div>
     </div>
 </article>
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div><span>Kaypak, A. C. and <strong>Raz, A.</strong> (2021).<br>
         Macrodosing to Microdosing with Psychedelics: Clinical, Social, and Cultural Perspectives.<br>
         (Under review)</span><span>&nbsp;</span><a href="#" target="_blank" aria-label="undefined (opens in a new tab)" rel="noreferrer noopener"><strong>download</strong></a></div>
     </div>
 </article>
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div>Olson JA, Lifshitz M, <strong>Raz A</strong> and Veissière SPL (2021).<br>
         Super Placebos: A Feasibility Study Combining Contextual Factors to Promote Placebo Effects.<br>
         Front. Psychiatry 12:644825.<br>
         <strong><a href="#">doi</a><span>&nbsp;</span>|</strong><span>&nbsp;</span><a href="#" target="_blank" aria-label="undefined (opens in a new tab)" rel="noreferrer noopener"><strong>download</strong></a></div>
     </div>
 </article>
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div>Landry, M., Castanheira, J. D. S., Sackur, J., &amp; <strong>Raz, A.</strong> (2021).<br>
         Investigating how the modularity of visuospatial attention shapes conscious perception using type I and type II signal detection theory.<br>
         Journal of Experimental psychology. Human Perception and Performance.<br>
@@ -103,31 +103,31 @@ const Articles = () => {
             {
                 year: 2020,
                 content: `
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div>Olson, J. A., Lifshitz, M., Raz, A., &amp; Veissière, S. P. L. (2020).<br>
         Super Placebos: A Feasibility Study Combining Contextual Factors to Promote Placebo Effects.<br>
         Front. Psychiatry 12:644825.<br>
         <strong><a href="https://doi.org/10.3389/fpsyt.2021.644825">doi</a><span>&nbsp;</span>|</strong><span>&nbsp;</span><a href="https://raz-lab.org/wp-content/uploads/2021/03/olson2021super.pdf" target="_blank" aria-label="undefined (opens in a new tab)" rel="noreferrer noopener"><strong>download</strong></a></div>
     </div>
 </article>
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div>Landry, M., Castanheira, J. D. S., Sackur, J., &amp; <strong>Raz, A.</strong> (2020).<br>
         Investigating how the modularity of visuospatial attention shapes conscious perception using type I and type II signal detection theory.<br>
         Journal of Experimental psychology. Human Perception and Performance.<br>
         <strong><a href="https://doi.apa.org/doiLanding?doi=10.1037%2Fxhp0000810">doi</a><span>&nbsp;</span>|</strong><span>&nbsp;</span><a href="https://raz-lab.org/wp-content/uploads/2023/09/Landry_DaSilva_Sackur_Raz_Manuscript_Revised.pdf" target="_blank" aria-label="undefined (opens in a new tab)" rel="noreferrer noopener"><strong>download</strong></a></div>
     </div>
 </article>
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div>Kaypak, A. C. and <strong>Raz, A.</strong> (2020).<br>
         Macrodosing to Microdosing with Psychedelics: Clinical, Social, and Cultural Perspectives.<br>
         (Under review)</span><span>&nbsp;</span><a href="https://raz-lab.org/wp-content/uploads/2021/04/Final-Version-Kaypak-C.-Raz.-A-2021-Macrodosing-to-Microdosing-with-Psychedelics-Clinical-Social-and-Cultural-Perspectives.docx" target="_blank" aria-label="undefined (opens in a new tab)" rel="noreferrer noopener"><strong>download</strong></a></div>
     </div>
 </article>
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div>Olson, J. A., Lifshitz, M., Raz, A., &amp; Veissière, S. P. L. (2020).<br>
         Super Placebos: A Feasibility Study Combining Contextual Factors to Promote Placebo Effects.<br>
         Front. Psychiatry 12:644825.<br>
@@ -139,16 +139,16 @@ const Articles = () => {
             {
                 year: 2019,
                 content: `
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div>Olson, J. A., Lifshitz, M., Raz, A., &amp; Veissière, S. P. L. (2019).<br>
         Super Placebos: A Feasibility Study Combining Contextual Factors to Promote Placebo Effects.<br>
         Front. Psychiatry 12:644825.<br>
         <strong><a href="https://doi.org/10.3389/fpsyt.2021.644825">doi</a><span>&nbsp;</span>|</strong><span>&nbsp;</span><a href="https://raz-lab.org/wp-content/uploads/2021/03/olson2021super.pdf" target="_blank" aria-label="undefined (opens in a new tab)" rel="noreferrer noopener"><strong>download</strong></a></div>
     </div>
 </article>
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div>Landry, M., Castanheira, J. D. S., Sackur, J., &amp; <strong>Raz, A.</strong> (2019).<br>
         Investigating how the modularity of visuospatial attention shapes conscious perception using type I and type II signal detection theory.<br>
         Journal of Experimental psychology. Human Perception and Performance.<br>
@@ -160,16 +160,16 @@ const Articles = () => {
             {
                 year: 2018,
                 content: `
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div>Thibault, R. T., Lifshitz, M., Jones, J. M., &amp; <strong>Raz, A.</strong> (2018).<br>
         Neurofeedback with fMRI: A critical systematic review.<br>
         NeuroImage, 172, 786-807.<br>
         <strong><a href="https://doi.org/10.1016/j.neuroimage.2018.01.157">doi</a><span>&nbsp;</span>|</strong><span>&nbsp;</span><a href="https://raz-lab.org/wp-content/uploads/2023/09/1-s2.0-S105381001830157X-main.pdf" target="_blank" aria-label="undefined (opens in a new tab)" rel="noreferrer noopener"><strong>download</strong></a></div>
     </div>
 </article>
-<article class="article-item">
-    <div class="article-content">
+<article class="publication-item">
+    <div class="publication-content">
         <div>Thibault, R. T., Lifshitz, M., &amp; <strong>Raz, A.</strong> (2018).<br>
         The self-regulating brain and neurofeedback: Experimental science and clinical promise.<br>
         Cortex, 107, 93-104.<br>
@@ -184,9 +184,9 @@ const Articles = () => {
     return (
         <div>
             <Navbar />
-            <main className="main-content articles-page">
-                {articles.map((article, index) => (
-                    <div key={index} dangerouslySetInnerHTML={{ __html: article.content }} />
+            <main className="main-content publications-page">
+                {publications.map((publication, index) => (
+                    <div key={index} dangerouslySetInnerHTML={{ __html: publication.content }} />
                 ))}
             </main>
             <Footer />
@@ -194,4 +194,4 @@ const Articles = () => {
     );
 };
 
-export default Articles;
+export default Publications;

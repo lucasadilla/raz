@@ -535,7 +535,7 @@
     text-decoration: underline;
 }
 
-.articles-page {
+.publications-page {
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -543,34 +543,37 @@
     background-color: #f0f4f8; /* Light background color */
 }
 
-.article-item {
+.publication-item {
     width: 100%;
     max-width: 800px; /* Limit the maximum width */
-    background-color: #ffffff; /* White background for articles */
+    background-color: #ffffff; /* White background for publications */
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     border-radius: 8px; /* Rounded corners */
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.article-item:hover {
+.publication-item:hover {
     transform: translateY(-10px); /* Slightly move the item up on hover */
 }
 
-.article-item h2 {
+.publication-item h2 {
     font-size: 24px; /* Larger font size for titles */
     color: #333;
     margin-bottom: 10px;
 }
 
-.article-item p {
+.publication-item p {
     font-size: 16px; /* Smaller font size for dates */
     color: #666;
     margin-bottom: 10px;
 }
 
-.article-item img {
+.publication-item img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -578,18 +581,18 @@
     margin-bottom: 10px;
 }
 
-.article-item a {
+.publication-item a {
     color: #0070f3;
     text-decoration: none;
     transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
-.article-item a:hover {
+.publication-item a:hover {
     color: #005bb5; /* Darker color on hover */
     text-decoration: underline;
 }
 
-.article-item h3 {
+.publication-item h3 {
     font-size: 1rem; /* Smaller font size for the date */
     color: #666; /* Optional: change color for better readability */
 }

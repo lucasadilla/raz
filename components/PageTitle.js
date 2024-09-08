@@ -8,7 +8,7 @@ const PageTitle = () => {
     const titles = {
         '/': 'Home',
         '/About': 'About',
-        '/Articles': 'Articles',
+        '/Publications': 'Publications',
         '/Books': 'Books',
         '/Media': 'Media',
         '/Research': 'Research',
