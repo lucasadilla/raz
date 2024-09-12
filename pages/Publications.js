@@ -632,187 +632,187 @@ const Publications = () => {
                 "year": 2006,
                 "title": "Could certain frequencies of electromagnetic waves or radiation interfere with brain function?",
                 "authors": "Raz, A.",
-                "link": "https://www.scientificamerican.com"
+                "link": "https://www.scientificamerican.com/article/could-certain-frequencies/"
             },
             {
                 "year": 2005,
                 "title": "Attention and hypnosis: neural substrates and genetic associations of two converging processes",
                 "authors": "Raz, A.",
-                "link": "https://www.tandfonline.com"
+                "link": "https://doi.org/10.1080/00207140590961295"
             },
             {
                 "year": 2006,
                 "title": "From repression and attention to culture and automaticity",
                 "authors": "Raz, A., & Fabrega, H.",
-                "link": "https://www.cambridge.org"
+                "link": "https://doi.org/10.1017/S0140525X06419117"
             },
             {
                 "year": 2006,
                 "title": "Individual differences and attentional varieties",
                 "authors": "Raz, A.",
-                "link": "https://www.europamedicophysica.com"
+                "link": "https://pubmed.ncbi.nlm.nih.gov/16565687/"
             },
             {
                 "year": 2007,
                 "title": "Suggestion overrides the Stroop effect in highly hypnotizable individuals",
                 "authors": "Raz, A., Moreno-Íniguez, M., Martin, L., & Zhu, H.",
-                "link": "https://www.sciencedirect.com"
+                "link": "https://doi.org/10.1016/j.concog.2006.04.004"
             },
             {
                 "year": 2006,
                 "title": "Neuroimaging and genetic associations of attentional and hypnotic processes",
                 "authors": "Raz, A., Fan, J., & Posner, M. I.",
-                "link": "https://www.journalofphysiology-paris.com"
+                "link": "https://doi.org/10.1016/j.jphysparis.2006.03.003"
             },
             {
                 "year": 2006,
                 "title": "Typologies of attentional networks",
                 "authors": "Raz, A., & Buhle, J.",
-                "link": "https://www.nature.com"
+                "link": "https://10.0.4.14/nrn1903"
             },
             {
                 "year": 2006,
                 "title": "A statistical framework for the classification of tensor morphologies in diffusion tensor images",
                 "authors": "Zhu, H., Xu, D., Raz, A., Hao, X., Zhang, H., Kangarlu, A., … & Peterson, B. S.",
-                "link": "https://www.journals.elsevier.com/magnetic-resonance-imaging"
+                "link": "https://doi.org/10.1016/j.mri.2006.01.004"
             },
             {
                 "year": 2006,
                 "title": "Suggestion reduces the Stroop effect",
                 "authors": "Raz, A., Kirsch, I., Pollard, J., & Nitkin-Kaner, Y.",
-                "link": "https://journals.sagepub.com"
+                "link": "https://doi.org/10.1111%2Fj.1467-9280.2006.01669.x"
             },
             {
                 "year": 2005,
                 "title": "Perspectives on the efficacy of antidepressants for child and adolescent depression",
                 "authors": "Raz, A.",
-                "link": "https://journals.plos.org/plosmedicine"
+                "link": "https://doi.org/10.1371/journal.pmed.0030009"
             },
             {
                 "year": 2005,
                 "title": "The Science and Fiction of Memory Removal",
                 "authors": "Gondry, M., Raz, A., & Paasivirta, M.",
-                "link": "https://www.psycnet.apa.org"
+                "link": "https://10.0.4.13/04087512"
             },
             {
                 "year": 2005,
                 "title": "Hypnotic suggestion reduces conflict in the human brain",
                 "authors": "Raz, A., Fan, J., & Posner, M. I.",
-                "link": "https://www.pnas.org"
+                "link": "https://doi.org/10.1073/pnas.0503064102"
             },
             {
                 "year": 2005,
                 "title": "Atypical attention. An alternative to pharmacological treatment for children and adolescents based on suggestion, motivation, and expectation",
                 "authors": "Moreno-Iñiguez, M., & Raz, A.",
-                "link": "https://www.revistadepsiquiatriainfantojuvenil.com"
+                "link": ""
             },
             {
                 "year": 2005,
                 "title": "Neuropsychological Assessment of Attention and Executive Functioning",
                 "authors": "Lamar, M., & Raz, A.",
-                "link": "https://www.cambridge.org"
+                "link": "https://www.cambridge.org/core/books/abs/cambridge-handbook-of-psychology-health-and-medicine/neuropsychological-assessment-of-attention-and-executive-functioning/67ED688668BC0E564E583521A6B26A0D"
             },
             {
                 "year": 2005,
                 "title": "Recent Perspectives on Tourette’s Syndrome: Breakthrough Genetics, a Broadway Musical, and an Educational Documentary",
                 "authors": "Raz, A.",
-                "link": "https://www.journals.elsevier.com"
+                "link": "https://psycnet.apa.org/doi/10.1037/05246512"
             },
             {
                 "year": 2005,
                 "title": "Fiber Connection Density Map Based on Diffusion Tensor Image Data",
                 "authors": "Xu, D., Raz, A., Bansal, R., Zhu, H., Hao, X., Kangarlu, A., & Peterson, B.",
-                "link": "https://www.journals.elsevier.com"
+                "link": "https://raz-lab.org/wp-content/uploads/2023/09/Fiber_Map_DTI.pdf"
             },
             {
                 "year": 2005,
                 "title": "Ecological nuances in functional magnetic resonance imaging (fMRI): psychological stressors, posture, and hydrostatics",
                 "authors": "Raz, A., Lieber, B., Soliman, F., Buhle, J., Posner, J., Peterson, B. S., & Posner, M. I.",
-                "link": "https://www.elsevier.com"
+                "link": "https://doi.org/10.1016/j.neuroimage.2004.11.015"
             },
             {
                 "year": 2004,
                 "title": "Anatomy of attentional networks",
                 "authors": "Raz, A.",
-                "link": "https://onlinelibrary.wiley.com"
+                "link": "https://doi.org/10.1002/ar.b.20035"
             },
             {
                 "year": 2004,
                 "title": "Brain imaging data of ADHD",
                 "authors": "Raz, A.",
-                "link": "https://www.psychiatrictimes.com"
+                "link": "https://www.psychiatrictimes.com/view/brain-imaging-data-adhd"
             },
             {
                 "year": 2004,
                 "title": "Where in the brain does the forward model lurk?",
                 "authors": "Donchin, O., & Raz, A.",
-                "link": "https://www.cambridge.org"
+                "link": "https://doi.org/10.1017/S0140525X04270091"
             },
             {
                 "year": 2004,
                 "title": "Critique of claims of improved visual acuity after hypnotic suggestion",
                 "authors": "Raz, A., Zephrani, Z. R., Schweizer, H. R., & Marinoff, G. P.",
-                "link": "https://journals.lww.com"
+                "link": "https://10.0.4.73/01.OPX.0000145032.79975.58"
             },
             {
                 "year": 2004,
                 "title": "Probing Brain Oxygenation Waveforms with Near Infrared Spectroscopy (NIRS)",
                 "authors": "Gersten, A., Perle, J., Heimer, D., Raz, A., Fried, R.",
-                "link": "https://www.intechopen.com"
+                "link": "https://https//arxiv.org/abs/1612.08743"
             },
             {
                 "year": 2004,
-                "title": "Neural substrates of attention",
+                "title": "Neural substrates of attention. In G. Adelman & B. H. Smith (Eds.), Encyclopedia of Neuroscience (pp). New York: Elsevier Science.",
                 "authors": "Raz, A.",
-                "link": "https://www.elsevier.com"
+                "link": ""
             },
             {
                 "year": 2004,
-                "title": "Atypical attention: Hypnosis and conflict reduction",
+                "title": "Atypical attention: Hypnosis and conflict reduction. In Posner M. I. (Ed.), Cognitive Neuroscience of Attention (pp. 420-429). New York: Guilford Press.",
                 "authors": "Raz, A.",
-                "link": "https://www.guilford.com"
+                "link": ""
             },
             {
                 "year": 2004,
-                "title": "Attention",
+                "title": "Attention. In C. Spielberger (Ed.), Encyclopedia of Applied Psychology (pp. 203-208). San Diego, CA: Elsevier Science Academic Press.",
                 "authors": "Raz, A.",
-                "link": "https://www.elsevier.com"
+                "link": ""
             },
             {
                 "year": 2004,
                 "title": "Neural Correlates and Exploratory Genetic Associations of Attentional and Hypnotic Phenomena",
                 "authors": "Raz, A., Fossella, J. A., McGuiness, P., Zephrani, Z. R., & Posner, M. I.",
-                "link": "https://www.hypnose-und-kognition.de"
+                "link": "https://www.researchgate.net/publication/286694464_Neural_correlates_and_exploratory_genetic_associations_of_attentional_and_hypnotic_phenomena"
             },
             {
                 "year": 2004,
                 "title": "A social psychologist illuminates cognition",
                 "authors": "Raz, A., & Norman, K. L.",
-                "link": "https://www.cambridge.org"
+                "link": "https://doi.org/10.1017/S0140525X04380155"
             },
             {
                 "year": 2004,
                 "title": "Substrates of negative accommodation",
                 "authors": "Raz, A., Marinoff, G. P., Landzberg, K. S., & Guyton, D. L.",
-                "link": "https://journals.sagepub.com"
+                "link": "https://pubmed.ncbi.nlm.nih.gov/15180591/"
             },
             {
                 "year": 2003,
                 "title": "A zetetic’s perspective on gesture, speech, and the evolution of right-handedness",
                 "authors": "Raz, A., & Donchin, O.",
-                "link": "https://www.cambridge.org"
+                "link": "https://doi.org/10.1017/S0140525X03530060"
             },
             {
                 "year": 2003,
                 "title": "Posthypnotic suggestion and the modulation of Stroop interference under cycloplegia",
                 "authors": "Raz, A., Landzberg, K. S., Schweizer, H. R., Zephrani, Z. R., Shapiro, T., Fan, J., & Posner, M. I.",
-                "link": "https://www.sciencedirect.com"
+                "link": "https://doi.org/10.1016/S1053-8100(03)00024-2"
             },
             {
                 "year": 2003,
-                "title": "Attentional Mechanisms",
+                "title": "Attentional Mechanisms. In Aminoff, M. J., Daroff, R. B. (Eds.), Encyclopedia of Neurological Sciences (pp. 292-299). New York: Elsevier Science.",
                 "authors": "Fan, J., Raz, A., & Posner, M. I.",
-                "link": "https://www.elsevier.com"
+                "link": ""
             },
             {
                 "year": 2001,
@@ -824,25 +824,25 @@ const Publications = () => {
                 "year": 2002,
                 "title": "Hypnotic suggestion and the modulation of Stroop interference",
                 "authors": "Raz, A., Shapiro, T., Fan, J., & Posner, M. I.",
-                "link": "https://jamanetwork.com"
+                "link": "https://10.0.3.233/archpsyc.59.12.1155"
             },
             {
                 "year": 2002,
                 "title": "Testing the efficiency and independence of attentional networks",
                 "authors": "Fan, J., McCandliss, B. D., Sommer, T., Raz, A., & Posner, M. I.",
-                "link": "https://www.mitpressjournals.org"
+                "link": "https://doi.org/10.1162/089892902317361886"
             },
             {
                 "year": 2002,
                 "title": "Speech sounds learned by sleeping newborns",
                 "authors": "Cheour, M., Martynova, O., Näätänen, R., Erkkola, R., Sillanpää, M., Kero, P., … & Savela, J.",
-                "link": "https://www.nature.com"
+                "link": "https://doi.org/10.1038/415599b"
             },
             {
                 "year": 2002,
                 "title": "Hypnosis and neuroscience: a cross talk between clinical and cognitive research",
                 "authors": "Raz, A., & Shapiro, T.",
-                "link": "https://jamanetwork.com"
+                "link": "https://www.researchgate.net/publication/11579356_Hypnosis_and_Neuroscience_A_Cross_Talk_Between_Clinical_and_Cognitive_Research"
             }
 
         ]);
