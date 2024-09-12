@@ -34,11 +34,6 @@ export default function Navbar() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/Pictures">
-                                <span className="nav-link text-white">PICTURES</span>
-                            </Link>
-                        </li>
-                        <li>
                             <Link href="/About">
                                 <span className="nav-link text-white">ABOUT</span>
                             </Link>

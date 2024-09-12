@@ -2,6 +2,11 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useRouter } from 'next/router';
+import ImageCarousel from "../components/ImageCarousel";
+
+const images = [
+    { src: "/images/photos/desert.jpeg", alt: "Desert", text: "“Some recent science for desert”" },
+];
 
 export default function Home() {
     const router = useRouter();
@@ -25,6 +30,9 @@ export default function Home() {
                     <img src="/images/logos/3D cover.png" alt="The Suggestible Brain" className="relative w-1/2 h-1/2"/>
                 </div>
                 <p onClick={handleLinkClick} className="all-books-link">All Books</p>
+                <div className="pictures-page">
+                    <ImageCarousel images={images}/>
+                </div>
             </main>
             <Footer/>
         </div>

@@ -6,9 +6,9 @@ const Books = () => {
     return (
         <div>
             <Navbar/>
-            <main className="main-content">
-                <div className="book-item">
-                    <img className="book-image-bordered" src="/images/logos/3D cover.png" alt="The Suggestible Brain"/>
+            <main className="main-content books-page">
+                <div className="book-item no-border">
+                    <img className="book-image" src="/images/logos/3D cover.png" alt="The Suggestible Brain"/>
                     <div className="book-text">
                         <p className="book-description">The Suggestible Brain: The Science and Magic of How We Make Up
                             Our Minds</p>

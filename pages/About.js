@@ -7,7 +7,7 @@ const About = () => {
         <div>
             <Navbar/>
             <main className="main-content">
-                <img src="/images/profile%20picture.jpg" alt="Banner" className="about-banner"/>
+                <img src="/images/media/raz.jpg" alt="Banner" className="about-banner"/>
                 <p className="about-text">Dr. Amir Raz is a world-renowned expert on the science of suggestion with
                     recent positions as Canada
                     Research Chair, Professor of Psychiatry, Neurology and Neurosurgery, and Psychology at McGill
