@@ -449,18 +449,99 @@
     margin-bottom: 20px;
 }
 
+/* styles/global.css */
+.blue-banner {
+    background-color: #0000ff; /* Blue background */
+    padding: 2rem;
+    display: flex;
+    justify-content: center; /* Space between left images and book image */
+    align-items: center;
+    position: relative;
+    width: 100%; /* Ensure the banner takes the full width of the page */
+    max-width: none; /* Remove any maximum width constraints */
+    height: auto;
+}
+
+.left-images {
+    display: flex;
+    flex-direction: column; /* Arrange images vertically */
+    gap: 0;
+    margin-top: -39rem;
+    position: absolute;
+    left: -12rem;
+}
+
+.left-images img {
+    transform: scale(1.1);
+    margin-bottom: -44rem;
+    margin-left: -24rem;
+}
+
+.book-image-books {
+    max-width: 90%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    left: 12rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    outline: none;
+}
+
+.book-image-books:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+}
+
+.book-image-index {
+    max-width: 90%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    left: 12rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-image-index:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.right-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+.available-images {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.available-images img {
+    width: 10rem; /* Adjust the size as needed */
+    height: auto;
+    object-fit: contain;
+}
+
 .all-books-link {
-    color: #0070f3;
+    margin-top: 1rem; /* Add some space above the link */
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-    display: block;
-    text-align: center;
-    transition: color 0.3s; /* Smooth transition for hover effect */
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .all-books-link:hover {
-    color: #005bb5; /* Darker color on hover */
+    color: #9fffff;
     text-decoration: underline;
 }
 

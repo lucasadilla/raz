@@ -11,9 +11,6 @@ const images = [
 export default function Home() {
     const router = useRouter();
 
-    const handleLinkClick = () => {
-        router.push('/books');
-    };
 
     return (
         <div>
@@ -26,10 +23,26 @@ export default function Home() {
                         AMIR RAZ
                     </div>
                 </div>
-                <div className="relative flex items-center justify-center">
-                    <img src="/images/logos/3D cover.png" alt="The Suggestible Brain" className="relative w-1/2 h-1/2"/>
+                <div className="blue-banner">
+                    <div className="left-images">
+                        <img src="/images/suggestible/hand.png"/>
+                        <img src="/images/suggestible/available.png"/>
+                        <img src="/images/suggestible/oct.png"/>
+                        <img src="/images/suggestible/2024.png"/>
+                        <img src="/images/suggestible/brain.png"/>
+                    </div>
+                    <a href="/Books">
+                        <img src="/images/logos/3D cover.png" alt="The Suggestible Brain" className="book-image-index"/>
+                    </a>
+                    <div className="right-text">
+                        <p>Available at:</p>
+                        <div className="available-images">
+                            <img src="/images/books/logos/amazon.png" alt="Store 1"/>
+                            <img src="/images/books/logos/hachette.png" alt="Store 2"/>
+                            <img src="/images/books/logos/hachette-audio.png" alt="Store 3"/>
+                        </div>
+                    </div>
                 </div>
-                <p onClick={handleLinkClick} className="all-books-link">All Books</p>
                 <div className="pictures-page">
                     <ImageCarousel images={images}/>
                 </div>
