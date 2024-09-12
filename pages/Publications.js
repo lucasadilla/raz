@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import PageTitle from "../components/PageTitle";
 import { useRouter } from 'next/router';
 
 const Publications = () => {
@@ -208,6 +207,12 @@ const Publications = () => {
                         "authors": "R T Thibault, M Lifshitz, N Birbaumer, A Raz",
                         "link": "https://doi.org/10.1016/j.cortex.2015.10.024"
                     },
+            {
+                "year": 2016,
+                "title": "Placebo response correlates with hypnotic suggestibility",
+                "authors": "E O Sheiner, M Lifshitz, A Raz",
+                "link": "https://dx.doi.org/10.1037/cns0000074"
+            },
                     {
                         "year": 2016,
                         "title": "Body position alters human resting-state: Insights from multi-postural magnetoencephalography",
@@ -231,12 +236,6 @@ const Publications = () => {
                         "title": "Paying attention to a field in crisis: Psychiatry, neuroscience, and functional systems of the brain",
                         "authors": "A Raz, E B Macdonald",
                         "link": "https://www.researchgate.net/publication/298639102_Paying_attention_to_a_field_in_crisis_Psychiatry_neuroscience_and_functional_systems_of_the_brain"
-                    },
-                    {
-                        "year": 2016,
-                        "title": "Placebo response correlates with hypnotic suggestibility",
-                        "authors": "E O Sheiner, M Lifshitz, A Raz",
-                        "link": "https://dx.doi.org/10.1037/cns0000074"
                     },
                     {
                         "year": 2015,
@@ -305,22 +304,10 @@ const Publications = () => {
                 "link": "https://doi.org/10.3389/fpsyg.2014.00334"
             },
             {
-                "year": 2010,
-                "title": "From dynamic lesions to brain imaging of behavioral lesions: Alloying the gold of psychoanalysis with the copper of suggestion",
-                "authors": "Raz, A., & Wolfson, J. B.",
-                "link": "https://doi.org/10.1080/15294145.2010.10773621"
-            },
-            {
                 "year": 2014,
                 "title": "Suggestion overrides automatic audiovisual integration",
                 "authors": "Déry, C., Campbell, N. K., Lifshitz, M., & Raz, A.",
                 "link": "https://doi.org/10.1016/j.concog.2013.12.010"
-            },
-            {
-                "year": 2013,
-                "title": "Computational modeling of the negative priming effect based on inhibition patterns and working memory",
-                "authors": "Chung, D., Raz, A., Lee, J., & Jeong, J.",
-                "link": "https://doi.org/10.3389/fncom.2013.00166"
             },
             {
                 "year": 2014,
@@ -336,15 +323,21 @@ const Publications = () => {
             },
             {
                 "year": 2013,
+                "title": "Computational modeling of the negative priming effect based on inhibition patterns and working memory",
+                "authors": "Chung, D., Raz, A., Lee, J., & Jeong, J.",
+                "link": "https://doi.org/10.3389/fncom.2013.00166"
+            },
+            {
+                "year": 2013,
+                "title": "Using suggestion to modulate automatic processes: From Stroop to McGurk and beyond",
+                "authors": "Lifshitz, M., Bonn, N. A., Fischer, A., Kashem, I. F., & Raz, A.",
+                "link": "https://doi.org/10.1016/j.cortex.2012.08.007"
+            },
+            {
+                "year": 2013,
                 "title": "Paying Attention to Michael Posner",
                 "authors": "Raz, A. & Oksenhendler, R.",
                 "link": "https://www.yumpu.com/en/document/read/28568394/psyccritiques-paying-attention-to-michael-posner-the-raz-lab"
-            },
-            {
-                "year": 2012,
-                "title": "Le rôle des facteurs développementaux dans la détermination de la responsabilité morale chez les jeunes: une étude pilote évaluant les opinions d’experts légaux et cliniques",
-                "authors": "Demacheva, I., Aubert Bonn, N., Lucero, S., Ladouceur, M., & Raz, A.",
-                "link": "https://doi.org/10.7202/1013725ar"
             },
             {
                 "year": 2013,
@@ -360,21 +353,15 @@ const Publications = () => {
             },
             {
                 "year": 2012,
+                "title": "Le rôle des facteurs développementaux dans la détermination de la responsabilité morale chez les jeunes: une étude pilote évaluant les opinions d’experts légaux et cliniques",
+                "authors": "Demacheva, I., Aubert Bonn, N., Lucero, S., Ladouceur, M., & Raz, A.",
+                "link": "https://doi.org/10.7202/1013725ar"
+            },
+            {
+                "year": 2012,
                 "title": "Translational attention: From experiments in the lab to helping the symptoms of individuals with Tourette’s syndrome",
                 "authors": "Raz, A.",
                 "link": "https://doi.org/10.1016/j.concog.2012.05.010"
-            },
-            {
-                "year": 2013,
-                "title": "Using suggestion to modulate automatic processes: From Stroop to McGurk and beyond",
-                "authors": "Lifshitz, M., Bonn, N. A., Fischer, A., Kashem, I. F., & Raz, A.",
-                "link": "https://doi.org/10.1016/j.cortex.2012.08.007"
-            },
-            {
-                "year": 2007,
-                "title": "Elucidating Tourette’s syndrome: Perspectives from hypnosis, attention and self-regulation",
-                "authors": "Raz, A., Keller, S., Norman, K., & Senechal, D.",
-                "link": "https://doi.org/10.1080/00029157.2007.10524506"
             },
             {
                 "year": 2012,
@@ -432,6 +419,12 @@ const Publications = () => {
             },
             {
                 "year": 2012,
+                "title": "Converging evidence for de-automatization as a function of suggestion",
+                "authors": "Campbell, N. K., Blinderman, I. M., Lifshitz, M., & Raz, A.",
+                "link": "https://doi.org/10.1016/j.concog.2010.03.004"
+            },
+            {
+                "year": 2012,
                 "title": "Deliberate use of placebos in clinical practice: what we really know",
                 "authors": "Harris, C. S., & Raz, A.",
                 "link": "https://dx.doi.org/10.1136/medethics-2012-100695"
@@ -449,53 +442,12 @@ const Publications = () => {
                 "link": "https://doi.org/10.1016/j.tics.2011.10.002"
             },
             {
-                "year": 2007,
-                "title": "Contextualizing specificity: Specific and non-specific effects of treatment",
-                "authors": "Raz, A., & Michels, R.",
-                "link": "https://doi.org/10.1080/00029157.2007.10401614"
-            },
-            {
-                "year": 2007,
-                "title": "Selective biasing of a specific bistable-figure percept involves fMRI signal changes in frontostriatal circuits: A step toward unlocking the neural correlates of top-down control and self-regulation",
-                "authors": "Raz, A., Lamar, M., Buhle, J. T., Kane, M. J., & Peterson, B. S.",
-                "link": "https://doi.org/10.1080/00029157.2007.10401611"
-            },
-            {
-                "year": 2007,
-                "title": "Hypnobo: perspectives on hypnosis and placebo",
-                "authors": "Raz, A.",
-                "link": "https://doi.org/10.1080/00029157.2007.10401595"
-            },
-            {
-                "year": 2007,
-                "title": "Suggestibility and hypnotizability: Mind the gap",
-                "authors": "Raz, A.",
-                "link": "https://doi.org/10.1080/00029157.2007.10401582"
-            },
-            {
-                "year": 2007,
-                "title": "A commentary on mumpsimus, sumpsimus and the mpemba effect",
-                "authors": "Raz, A.",
-                "link": "https://doi.org/10.1080/00029157.2007.10401615"
-            },
-            {
-                "year": 2008,
-                "title": "Hemihypnosis, hypnosis, and the importance of knowing right from trend",
-                "authors": "Raz, A., Schwartzman, D., & Guindi, D.",
-                "link": "https://doi.org/10.1080/00029157.2008.10401665"
-            },
-            {
                 "year": 2011,
                 "title": "Sub-Therapeutic doses in the treatment of depression: the implications of Starting low and going Slow",
                 "authors": "de Jong, V., & Raz, A.",
                 "link": "https://cjc-rcc.ucalgary.ca/index.php/mbr/article/view/15987"
             },
-            {
-                "year": 2012,
-                "title": "Converging evidence for de-automatization as a function of suggestion",
-                "authors": "Campbell, N. K., Blinderman, I. M., Lifshitz, M., & Raz, A.",
-                "link": "https://doi.org/10.1016/j.concog.2010.03.004"
-            },
+
             {
                 "year": 2011,
                 "title": "Does neuroimaging of suggestion elucidate hypnotic trance?",
@@ -504,27 +456,27 @@ const Publications = () => {
             },
             {
                 "year": 2011,
+                "title": "Can suggestion obviate reading? Supplementing primary Stroop evidence with exploratory negative priming analyses",
+                "authors": "Raz, A., & Campbell, N. K.",
+                "link": "https://doi.org/10.1016/j.concog.2009.09.013"
+            },
+            {
+                "year": 2011,
                 "title": "Placebos in clinical practice: comparing attitudes, beliefs, and patterns of use between academic psychiatrists and nonpsychiatrists",
                 "authors": "Raz, A., Campbell, N., Guindi, D., Holcroft, C., Déry, C., & Cukier, O.",
                 "link": "https://doi.org/10.1177%2F070674371105600403"
             },
             {
-                "year": 2007,
-                "title": "Genetics and neuroimaging of attention and hypnotizability may elucidate placebo",
-                "authors": "Raz, A.",
-                "link": "https://doi.org/10.1080/00207140701506482"
+                "year": 2010,
+                "title": "From dynamic lesions to brain imaging of behavioral lesions: Alloying the gold of psychoanalysis with the copper of suggestion",
+                "authors": "Raz, A., & Wolfson, J. B.",
+                "link": "https://doi.org/10.1080/15294145.2010.10773621"
             },
             {
-                "year": 2004,
-                "title": "See clearly: Suggestion, hypnosis, attention, and visual acuity",
-                "authors": "Raz, A., Marinoff, G. P., Zephrani, Z. R., Schweizer, H. R., & Posner, M. I.",
-                "link": "https://dx.doi.org/10.1076/iceh.52.2.159.28097"
-            },
-            {
-                "year": 2009,
-                "title": "Using magic as a vehicle to elucidate attention",
-                "authors": "Raz, A., & Zigman, P.",
-                "link": "https://doi.org/10.1002/9780470015902.a0021396"
+                "year": 2010,
+                "title": "Differentiating Neuroethics From Neurophilosophy",
+                "authors": "Raz, A., & Braude, H.",
+                "link": "https://www.researchgate.net/publication/274988214_Differentiating_neuroethics_from_neurophilosophy"
             },
             {
                 "year": 2009,
@@ -533,10 +485,10 @@ const Publications = () => {
                 "link": "https://doi.org/10.1080/15265160903320455"
             },
             {
-                "year": 2011,
-                "title": "Can suggestion obviate reading? Supplementing primary Stroop evidence with exploratory negative priming analyses",
-                "authors": "Raz, A., & Campbell, N. K.",
-                "link": "https://doi.org/10.1016/j.concog.2009.09.013"
+                "year": 2009,
+                "title": "Using magic as a vehicle to elucidate attention",
+                "authors": "Raz, A., & Zigman, P.",
+                "link": "https://doi.org/10.1002/9780470015902.a0021396"
             },
             {
                 "year": 2009,
@@ -593,12 +545,6 @@ const Publications = () => {
                 "link": "https://doi.org/10.1037/a0017664"
             },
             {
-                "year": 2010,
-                "title": "Differentiating Neuroethics From Neurophilosophy",
-                "authors": "Raz, A., & Braude, H.",
-                "link": "https://www.researchgate.net/publication/274988214_Differentiating_neuroethics_from_neurophilosophy"
-            },
-            {
                 "year": 2008,
                 "title": "Paranormal experience and the COMT dopaminergic gene: A preliminary attempt to associate phenotype with genotype using an underlying brain theory",
                 "authors": "Raz, A., Hines, T., Fossella, J., & Castro, D.",
@@ -623,6 +569,60 @@ const Publications = () => {
                 "link": "https://10.0.4.153/070674371105600403"
             },
             {
+                "year": 2008,
+                "title": "Hemihypnosis, hypnosis, and the importance of knowing right from trend",
+                "authors": "Raz, A., Schwartzman, D., & Guindi, D.",
+                "link": "https://doi.org/10.1080/00029157.2008.10401665"
+            },
+            {
+                "year": 2007,
+                "title": "Suggestion overrides the Stroop effect in highly hypnotizable individuals",
+                "authors": "Raz, A., Moreno-Íniguez, M., Martin, L., & Zhu, H.",
+                "link": "https://doi.org/10.1016/j.concog.2006.04.004"
+            },
+            {
+                "year": 2007,
+                "title": "Elucidating Tourette’s syndrome: Perspectives from hypnosis, attention and self-regulation",
+                "authors": "Raz, A., Keller, S., Norman, K., & Senechal, D.",
+                "link": "https://doi.org/10.1080/00029157.2007.10524506"
+            },
+            {
+                "year": 2007,
+                "title": "Contextualizing specificity: Specific and non-specific effects of treatment",
+                "authors": "Raz, A., & Michels, R.",
+                "link": "https://doi.org/10.1080/00029157.2007.10401614"
+            },
+            {
+                "year": 2007,
+                "title": "Selective biasing of a specific bistable-figure percept involves fMRI signal changes in frontostriatal circuits: A step toward unlocking the neural correlates of top-down control and self-regulation",
+                "authors": "Raz, A., Lamar, M., Buhle, J. T., Kane, M. J., & Peterson, B. S.",
+                "link": "https://doi.org/10.1080/00029157.2007.10401611"
+            },
+            {
+                "year": 2007,
+                "title": "Hypnobo: perspectives on hypnosis and placebo",
+                "authors": "Raz, A.",
+                "link": "https://doi.org/10.1080/00029157.2007.10401595"
+            },
+            {
+                "year": 2007,
+                "title": "Suggestibility and hypnotizability: Mind the gap",
+                "authors": "Raz, A.",
+                "link": "https://doi.org/10.1080/00029157.2007.10401582"
+            },
+            {
+                "year": 2007,
+                "title": "A commentary on mumpsimus, sumpsimus and the mpemba effect",
+                "authors": "Raz, A.",
+                "link": "https://doi.org/10.1080/00029157.2007.10401615"
+            },
+            {
+                "year": 2007,
+                "title": "Genetics and neuroimaging of attention and hypnotizability may elucidate placebo",
+                "authors": "Raz, A.",
+                "link": "https://doi.org/10.1080/00207140701506482"
+            },
+            {
                 "year": 2007,
                 "title": "Cognitive control processes and hypnosis. Hypnosis and conscious states: The cognitive neuroscience perspective",
                 "authors": "Egner, T., & Raz, A.",
@@ -635,12 +635,6 @@ const Publications = () => {
                 "link": "https://www.scientificamerican.com/article/could-certain-frequencies/"
             },
             {
-                "year": 2005,
-                "title": "Attention and hypnosis: neural substrates and genetic associations of two converging processes",
-                "authors": "Raz, A.",
-                "link": "https://doi.org/10.1080/00207140590961295"
-            },
-            {
                 "year": 2006,
                 "title": "From repression and attention to culture and automaticity",
                 "authors": "Raz, A., & Fabrega, H.",
@@ -651,12 +645,6 @@ const Publications = () => {
                 "title": "Individual differences and attentional varieties",
                 "authors": "Raz, A.",
                 "link": "https://pubmed.ncbi.nlm.nih.gov/16565687/"
-            },
-            {
-                "year": 2007,
-                "title": "Suggestion overrides the Stroop effect in highly hypnotizable individuals",
-                "authors": "Raz, A., Moreno-Íniguez, M., Martin, L., & Zhu, H.",
-                "link": "https://doi.org/10.1016/j.concog.2006.04.004"
             },
             {
                 "year": 2006,
@@ -687,6 +675,12 @@ const Publications = () => {
                 "title": "Perspectives on the efficacy of antidepressants for child and adolescent depression",
                 "authors": "Raz, A.",
                 "link": "https://doi.org/10.1371/journal.pmed.0030009"
+            },
+            {
+                "year": 2005,
+                "title": "Attention and hypnosis: neural substrates and genetic associations of two converging processes",
+                "authors": "Raz, A.",
+                "link": "https://doi.org/10.1080/00207140590961295"
             },
             {
                 "year": 2005,
@@ -735,6 +729,12 @@ const Publications = () => {
                 "title": "Anatomy of attentional networks",
                 "authors": "Raz, A.",
                 "link": "https://doi.org/10.1002/ar.b.20035"
+            },
+            {
+                "year": 2004,
+                "title": "See clearly: Suggestion, hypnosis, attention, and visual acuity",
+                "authors": "Raz, A., Marinoff, G. P., Zephrani, Z. R., Schweizer, H. R., & Posner, M. I.",
+                "link": "https://dx.doi.org/10.1076/iceh.52.2.159.28097"
             },
             {
                 "year": 2004,
@@ -815,12 +815,6 @@ const Publications = () => {
                 "link": ""
             },
             {
-                "year": 2001,
-                "title": "Is pre‐attentive processing compromised by prolonged wakefulness? Effects of total sleep deprivation on the mismatch negativity",
-                "authors": "Raz, A., Deouell, L. Y., & Bentin, S.",
-                "link": "https://www.journals.cambridge.org"
-            },
-            {
                 "year": 2002,
                 "title": "Hypnotic suggestion and the modulation of Stroop interference",
                 "authors": "Raz, A., Shapiro, T., Fan, J., & Posner, M. I.",
@@ -843,6 +837,12 @@ const Publications = () => {
                 "title": "Hypnosis and neuroscience: a cross talk between clinical and cognitive research",
                 "authors": "Raz, A., & Shapiro, T.",
                 "link": "https://www.researchgate.net/publication/11579356_Hypnosis_and_Neuroscience_A_Cross_Talk_Between_Clinical_and_Cognitive_Research"
+            },
+            {
+                "year": 2001,
+                "title": "Is pre‐attentive processing compromised by prolonged wakefulness? Effects of total sleep deprivation on the mismatch negativity",
+                "authors": "Raz, A., Deouell, L. Y., & Bentin, S.",
+                "link": "https://www.journals.cambridge.org"
             }
 
         ]);
@@ -862,13 +862,13 @@ const Publications = () => {
                         className="publication-item"
                         onClick={() => handleCardClick(publication.link)}
                     >
-                        <div className="publication-title">{publication.title}</div>
                         <div className="publication-year">{publication.year}</div>
+                        <div className="publication-title">{publication.title}</div>
                         <div className="publication-authors">{publication.authors}</div>
                     </div>
                 ))}
             </main>
-            <Footer />
+            <Footer/>
         </div>
     );
 };
