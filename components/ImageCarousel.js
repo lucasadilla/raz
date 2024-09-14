@@ -14,12 +14,15 @@ const ImageCarousel = ({ images }) => {
 
     return (
         <div className="carousel">
-            <button onClick={handlePrev} className="carousel-button prev-button">&#9664;</button>
+            <button onClick={handlePrev} className="carousel-button prev-button">&lt;</button>
             <div className="carousel-content">
                 <img src={images[currentIndex].src} alt={images[currentIndex].alt} className="carousel-image" />
                 <p>{images[currentIndex].text}</p>
+                <div className="carousel-counter">
+                    {currentIndex + 1} / {images.length}
+                </div>
             </div>
-            <button onClick={handleNext} className="carousel-button next-button">&#9654;</button>
+            <button onClick={handleNext} className="carousel-button next-button">&gt;</button>
         </div>
     );
 };

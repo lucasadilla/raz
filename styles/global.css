@@ -35,6 +35,12 @@
     background-color: #f0f4f8;
 }
 
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
 .index-page {
     padding: 0;
     display: flex;
@@ -49,7 +55,7 @@
 }
 
 .banner-image{
-    width: 160%; /* Set the width to 100% of the parent container */
+    width: 100%; /* Set the width to 100% of the parent container */
     max-width: 1903px; /* Set a maximum width */
     height: auto; /* Maintain the aspect ratio */
     display: block; /* Ensure the image is displayed as a block element */
@@ -293,28 +299,20 @@
     padding: 1rem;
 }
 
-
 .pictures-page img {
-    width: 100%; /* Ensure the image takes the full width of its container */
+    width: 120%; /* Ensure the image takes the full width of its container */
     height: auto; /* Maintain the aspect ratio */
     object-fit: cover; /* Ensure the image covers the entire area without distortion */
     border-radius: 8px; /* Optional: add border radius for styling */
     margin: 1rem;
 }
 
-.pictures-page {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f0f4f8; /* Light background color */
-}
 
 .carousel {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 150%;
     max-width: 900px;
     margin: 2rem auto; /* Add margin for spacing */
     position: relative;
@@ -329,7 +327,6 @@
     padding: 0 5rem; /* Add padding to create gap between buttons and image */
 }
 
-
 .carousel-button {
     background: none;
     border: none;
@@ -338,12 +335,22 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: #0070f3; /* Button color */
+    color: rgb(0, 0, 0); /* Button color */
     transition: color 0.3s; /* Smooth transition for hover effect */
+    background-color: transparent; /* Ensure background is transparent */
+    z-index: 1;
 }
 
 .carousel-button:hover {
-    color: #005bb5; /* Darker color on hover */
+    color: #000000; /* Keep arrow color black on hover */
+}
+
+/* styles/global.css */
+.carousel-counter {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
 }
 
 .prev-button {
@@ -451,7 +458,7 @@
 
 /* styles/global.css */
 .blue-banner {
-    background-color: #0000ff; /* Blue background */
+    background-color: rgba(39, 39, 255, 0.9); /* Blue background */
     padding: 2rem;
     display: flex;
     justify-content: center; /* Space between left images and book image */
@@ -465,16 +472,14 @@
 .left-images {
     display: flex;
     flex-direction: column; /* Arrange images vertically */
-    gap: 0;
-    margin-top: -39rem;
     position: absolute;
-    left: -12rem;
+    left: 5rem;
+    margin-top: -9rem;
 }
 
 .left-images img {
-    transform: scale(1.1);
-    margin-bottom: -44rem;
-    margin-left: -24rem;
+    transform: scale(0.5);
+    margin-bottom: -9rem;
 }
 
 .book-image-books {
@@ -497,7 +502,7 @@
 }
 
 .book-image-index {
-    max-width: 90%;
+    max-width: 70%;
     height: auto;
     position: relative;
     z-index: 1;
@@ -544,7 +549,6 @@
     color: #9fffff;
     text-decoration: underline;
 }
-
 
 .about-banner {
     width: 50%;
@@ -753,4 +757,47 @@
 .publication-item h3 {
     font-size: 1rem; /* Smaller font size for the date */
     color: #666; /* Optional: change color for better readability */
+}
+
+
+/* styles/global.css */
+.recent-publications-banner {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #f0f4f8;
+}
+
+.publication-item {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.publication-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.publication-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.publication-authors {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.publication-year {
+    font-size: 0.875rem;
+    color: #999;
 }
