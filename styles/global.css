@@ -675,6 +675,7 @@ html, body {
 }
 
 .publications-page {
+    width: 100%;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -687,9 +688,9 @@ html, body {
 }
 
 .publication-item {
-    width: 100%;
-    max-width: 800px;
-    height: 200px;
+    width: 100%; /* Set the width to 100% of the parent container */
+    max-width: 1000px; /* Set a maximum width */
+    height: auto; /* Maintain the aspect ratio */
     background-color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
@@ -704,22 +705,23 @@ html, body {
 
 .publication-item:hover {
     transform: translateY(-10px); /* Slightly move the item up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the shadow */
 }
 
-.publication-title {
+.publications-page .publication-item .publication-title {
     font-size: 1.5rem; /* Larger font size for titles */
     color: #333;
     margin-bottom: 5px;
 }
 
-.publication-year {
-    font-size: 1.25rem; /* Smaller font size for the year */
+.publications-page .publication-item .publication-year {
+    font-size: 1.5rem; /* Smaller font size for the year */
     color: #333;
     margin-bottom: 5px;
 }
 
-.publication-authors {
-    font-size: 1rem; /* Smaller font size for authors */
+.publications-page .publication-item .publication-authors {
+    font-size: 0.75rem; /* Smaller font size for authors */
     color: #666;
 }
 
@@ -769,14 +771,6 @@ html, body {
     background-color: #f0f4f8;
 }
 
-.publication-item {
-    background-color: #ffffff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 30%;
-}
 
 .publication-image {
     width: 100%;
@@ -786,18 +780,91 @@ html, body {
 }
 
 .publication-title {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     color: #333;
     margin-bottom: 0.5rem;
 }
 
 .publication-authors {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #666;
     margin-bottom: 0.5rem;
 }
 
 .publication-year {
+    font-size: 2rem; /* Larger font size for the year */
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.index-publication-item {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.index-publication-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.index-publication-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.index-publication-authors {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.index-publication-year {
     font-size: 0.875rem;
     color: #999;
+}
+
+/* styles/global.css */
+.recent-publications-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f0f4f8;
+}
+
+.recent-publications-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.recent-publications-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.more-publications-button {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0070f3;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.more-publications-button:hover {
+    background-color: #005bb5;
 }

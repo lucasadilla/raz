@@ -11,9 +11,9 @@ const images = [
 ];
 
 const publications = [
-    { image: "/images/publications/pub1.jpg", title: "Moderate–severe beta-thalassemia intermedia phenotype caused by sextuplicated alpha-globin gene allele in two beta-thalassemia carriers", authors: "Ahlem Achour, Jeroen Knijnenburg, Tamara Koopmann, Amir Raz, Marc Tischkowitz, Thomas D. Coates, F. Baas, C. L. Harteveld", year: "2024" },
-    { image: "/images/publications/pub2.jpg", title: "Publication 2", authors: "Author 3, Author 4", year: "2022" },
-    { image: "/images/publications/pub3.jpg", title: "Publication 3", authors: "Author 5, Author 6", year: "2021" },
+    { title: "Moderate–severe beta-thalassemia intermedia phenotype caused by sextuplicated alpha-globin gene allele in two beta-thalassemia carriers", authors: "Amir Raz, Et al.", link: "https://doi.org/10.1002/ajh.27386" },
+    { title: "Suggestion alters Stroop automaticity: Hypnotic alexia through a proactive lens.", authors: "Amir Raz, Et al.", link: "https://psycnet.apa.org/doi/10.1037/cns0000268" },
+    { title: "The Rubber Hand Illusion: Top-down attention modulates embodiment", authors: "Amir Raz, Et al.", link: "https://pubmed.ncbi.nlm.nih.gov/35073801/" },
 ];
 
 export default function Home() {

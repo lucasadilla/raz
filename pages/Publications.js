@@ -857,14 +857,10 @@ const Publications = () => {
             <Navbar />
             <main className="main-content publications-page">
                 {publications.map((publication, index) => (
-                    <div
-                        key={index}
-                        className="publication-item"
-                        onClick={() => handleCardClick(publication.link)}
-                    >
-                        <div className="publication-year">{publication.year}</div>
-                        <div className="publication-title">{publication.title}</div>
-                        <div className="publication-authors">{publication.authors}</div>
+                    <div key={index} className="publication-item" onClick={() => handleCardClick(publication.link)}>
+                        <p className="publication-year">{publication.year}</p>
+                        <h3 className="publication-title">{publication.title}</h3>
+                        <p className="publication-authors">{publication.authors}</p>
                     </div>
                 ))}
             </main>
