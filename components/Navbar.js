@@ -46,6 +46,11 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li>
+                        <Link href="/Contact">
+                            <span className="nav-link text-white">CONTACT</span>
+                        </Link>
+                    </li>
+                    <li>
                         <Link href="/About">
                             <span className="nav-link text-white">ABOUT</span>
                         </Link>

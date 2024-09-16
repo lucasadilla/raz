@@ -204,7 +204,7 @@ html, body {
 
 .breadcrumbs a {
     text-decoration: none;
-    color: #0070f3;
+    color: #ffcc00;
 }
 
 .breadcrumbs a:hover {
@@ -231,7 +231,7 @@ html, body {
     display: block;
     margin-top: 5px;
     right: 0;
-    background: #000000;
+    background: #ffcc00;
     transition: width 0.4s ease;
     -webkit-transition: width 0.4s ease;
 }
@@ -239,7 +239,7 @@ html, body {
 .nav-link:hover::after {
     width: 100%;
     left: 0;
-    background: #ffffff;
+    background: #ffcc00;
 }
 
 .media-page {
@@ -770,7 +770,6 @@ html, body {
     color: #666; /* Optional: change color for better readability */
 }
 
-
 /* styles/global.css */
 .recent-publications-banner {
     display: flex;
@@ -938,6 +937,117 @@ html, body {
     font-size: 2rem; /* Adjust the size as needed */
 }
 
+.navbar .amir-raz:hover {
+    color: #ffcc00;
+}
+
 .amir-raz-item {
     margin-left: auto;
+}
+
+.about-index {
+    color: #ffffff; /* Initial color */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.about-index:hover {
+    color: #ffcc00; /* Color on hover */
+}
+
+/* styles/global.css */
+.contact-page {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.page-content-wrap {
+    background-color: #ffffff; /* White background for content */
+    padding: 2rem;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 800px; /* Limit width */
+    width: 100%;
+}
+
+.hestia-title {
+    font-size: 2rem; /* Larger title */
+    color: #333; /* Darker text color */
+    margin-bottom: 1rem; /* Space below title */
+    text-align: center; /* Centered title */
+}
+
+.page-content-wrap p {
+    font-size: 1rem; /* Consistent font size */
+    color: #555; /* Medium text color */
+    line-height: 1.6; /* Better line spacing */
+    margin-bottom: 1rem; /* Space below paragraphs */
+}
+
+.wpforms-container {
+    width: 100%;
+}
+
+.wpforms-title {
+    font-size: 1.5rem; /* Larger form title */
+    color: #333; /* Darker text color */
+    margin-bottom: 1rem; /* Space below form title */
+    text-align: center; /* Centered form title */
+}
+
+.wpforms-field-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap fields */
+    gap: 1rem; /* Space between fields */
+}
+
+.wpforms-field {
+    flex: 1 1 calc(50% - 1rem); /* Two columns layout */
+    min-width: 200px; /* Minimum width */
+}
+
+.wpforms-field label {
+    font-size: 0.875rem; /* Smaller label */
+    color: #333; /* Darker text color */
+    margin-bottom: 0.5rem; /* Space below label */
+    display: block; /* Block display */
+}
+
+.wpforms-field input,
+.wpforms-field select,
+.wpforms-field textarea {
+    width: 100%;
+    padding: 0.75rem; /* Larger padding */
+    font-size: 1rem; /* Consistent font size */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.wpforms-field textarea {
+    resize: vertical; /* Allow vertical resize */
+    min-height: 150px; /* Minimum height */
+}
+
+.wpforms-submit-container {
+    text-align: center; /* Centered button */
+    margin-top: 1rem; /* Space above button */
+}
+
+.wpforms-submit {
+    padding: 0.75rem 1.5rem; /* Larger padding */
+    font-size: 1rem; /* Consistent font size */
+    color: #fff; /* White text */
+    background-color: #0070f3; /* Primary color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.wpforms-submit:hover {
+    background-color: #005bb5; /* Darker on hover */
 }

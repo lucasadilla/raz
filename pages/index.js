@@ -4,6 +4,8 @@ import Footer from '../components/Footer';
 import { useRouter } from 'next/router';
 import ImageCarousel from "../components/ImageCarousel";
 import RecentPublicationsBanner from "../components/RecentPublicationsBanner";
+import Link from "next/link";
+import React from "react";
 
 
 const images = [
@@ -29,6 +31,11 @@ export default function Home() {
                     <div className="banner-text">
                         <div className="banner-subtext">Psychiatry, Neurology and Neurosurgery, and Psychology</div>
                         AMIR RAZ
+                        <div className="banner-subtext">
+                            <Link href="/About">
+                                <span className="about-index">ABOUT AMIR RAZ</span>
+                            </Link>
+                        </div>
                     </div>
                 </div>
                 <div className="blue-banner">
