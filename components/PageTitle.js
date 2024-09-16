@@ -14,6 +14,7 @@ const PageTitle = () => {
         '/Research': 'Research',
         '/Teaching': 'Teaching',
         '/Pictures': 'Pictures',
+        '/search': 'Search',
     };
 
     const title = titles[route] || 'Page Title';

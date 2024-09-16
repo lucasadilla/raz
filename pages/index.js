@@ -44,7 +44,8 @@ export default function Home() {
                     </a>
                 </div>
                 <RecentPublicationsBanner publications={publications}/>
-                <div className="pictures-page">
+                <div className="pictures-section">
+                    <h1>Pictures</h1>
                     <ImageCarousel images={images}/>
                 </div>
             </main>
