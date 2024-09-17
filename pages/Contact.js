@@ -22,10 +22,23 @@ export default function Contact() {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Handle form submission logic here
-        console.log('Form submitted:', formData);
+        try {
+            const response = await fetch('/api/sendMail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const result = await response.json();
+            alert(result.message);
+        } catch (error) {
+            console.error('Error sending email:', error);
+            alert('Error sending email');
+        }
     };
 
     return (
@@ -86,12 +99,12 @@ export default function Contact() {
                                     <label className="wpforms-field-label" htmlFor="reply">Do you need a reply?</label>
                                     <ul id="reply">
                                         <li className="choice-1 depth-1">
-                                            <input type="radio" id="reply_yes" name="reply" value="Yes please" checked={formData.reply === 'Yes please'} onChange={handleChange} />
                                             <label className="wpforms-field-label-inline" htmlFor="reply_yes">Yes please</label>
+                                            <input type="radio" id="reply_yes" name="reply" value="Yes please" checked={formData.reply === 'Yes please'} onChange={handleChange} />
                                         </li>
                                         <li className="choice-2 depth-1">
-                                            <input type="radio" id="reply_no" name="reply" value="No, this is just to let you know" checked={formData.reply === 'No, this is just to let you know'} onChange={handleChange} />
                                             <label className="wpforms-field-label-inline" htmlFor="reply_no">No, this is just to let you know</label>
+                                            <input type="radio" id="reply_no" name="reply" value="No, this is just to let you know" checked={formData.reply === 'No, this is just to let you know'} onChange={handleChange} />
                                         </li>
                                     </ul>
                                 </div>

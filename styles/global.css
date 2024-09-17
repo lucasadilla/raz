@@ -1051,3 +1051,19 @@ html, body {
 .wpforms-submit:hover {
     background-color: #005bb5; /* Darker on hover */
 }
+
+/* styles/global.css */
+.wpforms-field-radio ul {
+    list-style: none;
+    padding: 0;
+}
+
+.wpforms-field-radio li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Adjust the gap as needed */
+}
+
+.wpforms-field-radio input {
+    margin-left: 0.5rem; /* Adjust the space between the text and the radio button */
+}
