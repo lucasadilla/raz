@@ -1,32 +1,31 @@
-// api/search.js
 import publications from '../../data/publications.json';
-import media from '../data/media.json';
+import books from '../../data/books.json';
+import media from '../../data/media.json';
 
 export default function handler(req, res) {
     const { query, page = 1, limit = 10 } = req.query;
-    if (!query) {
-        return res.status(400).json({ error: 'Query parameter is required' });
-    }
+    const searchQuery = query.toLowerCase();
 
-    const allData = [...publications, ...media];
+    const filterResults = (data) => {
+        return data.filter(item =>
+            item.title.toLowerCase().includes(searchQuery) ||
+            (item.authors && item.authors.toLowerCase().includes(searchQuery))
+        );
+    };
 
-    const filteredResults = allData.filter(item =>
-        query.toLowerCase().split(' ').some(word =>
-            item.title.toLowerCase().includes(word) ||
-            (item.authors && item.authors.toLowerCase().includes(word)) ||
-            (item.link && item.link.toLowerCase().includes(word)) ||
-            (item.content && item.content.toLowerCase().includes(word))
-        )
-    );
+    const filteredBooks = filterResults(books);
+    const filteredMedia = filterResults(media);
+    const filteredPublications = filterResults(publications);
 
-    const startIndex = (page - 1) * limit;
-    const endIndex = startIndex + limit;
-    const paginatedResults = filteredResults.slice(startIndex, endIndex);
+    const totalResults = filteredBooks.length + filteredMedia.length + filteredPublications.length;
+    const totalPages = Math.ceil(totalResults / limit);
 
     res.status(200).json({
-        results: paginatedResults,
-        totalResults: filteredResults.length,
+        books: filteredBooks.slice((page - 1) * limit, page * limit),
+        media: filteredMedia.slice((page - 1) * limit, page * limit),
+        publications: filteredPublications.slice((page - 1) * limit, page * limit),
+        totalResults,
         currentPage: parseInt(page),
-        totalPages: Math.ceil(filteredResults.length / limit)
+        totalPages
     });
 }

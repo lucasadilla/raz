@@ -1,77 +1,83 @@
-// pages/search.js
+import VideoEmbed from '../components/VideoEmbed';
+import SoundCloudEmbed from '../components/SoundCloudEmbed';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useRouter } from 'next/router';
-import { useEffect, useState, useCallback } from 'react';
-import debounce from 'lodash/debounce';
+import { useState, useEffect } from 'react';
+import React from 'react';
 
 const Search = () => {
     const router = useRouter();
     const { query } = router.query;
-    const [searchQuery, setSearchQuery] = useState(query || '');
-    const [results, setResults] = useState([]);
-    const [currentPage, setCurrentPage] = useState(1);
-    const [totalPages, setTotalPages] = useState(1);
-
-    const fetchResults = useCallback(debounce((query, page) => {
-        fetch(`/api/search?query=${query}&page=${page}&limit=10`)
-            .then(response => response.json())
-            .then(data => {
-                setResults(data.results);
-                setTotalPages(data.totalPages);
-            })
-            .catch(error => console.error('Error fetching search results:', error));
-    }, 300), []);
+    const [results, setResults] = useState({ books: [], media: [], publications: [] });
 
     useEffect(() => {
-        if (searchQuery) {
-            fetchResults(searchQuery, currentPage);
+        if (query) {
+            fetch(`/api/search?query=${query}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Fetched data:', data); // Debugging log
+                    setResults(data);
+                })
+                .catch(error => console.error('Error fetching data:', error)); // Error handling
         }
-    }, [searchQuery, currentPage, fetchResults]);
-
-    const handleSearchChange = (e) => {
-        setSearchQuery(e.target.value);
-        setCurrentPage(1);
-    };
-
-    const handlePageChange = (newPage) => {
-        setCurrentPage(newPage);
-    };
+    }, [query]);
 
     return (
         <div>
             <Navbar />
-            <div className="search-page">
-                <input
-                    type="text"
-                    value={searchQuery}
-                    onChange={handleSearchChange}
-                    placeholder="Search..."
-                />
-                <h1>Search Results for "{searchQuery}"</h1>
-                <div className="search-results">
-                    {results.length > 0 ? (
-                        results.map((result, index) => (
-                            <div key={index} className="search-result-item">
-                                <h3>{result.title}</h3>
-                                <p>{result.authors}</p>
-                                <a href={result.link} target="_blank" rel="noopener noreferrer">Read more</a>
+            <div className='search-results'>
+                <h1>Search results for "{query}"</h1>
+                <div className='result-section'>
+                    <h2>Books</h2>
+                    {results.books.length > 0 ? (
+                        results.books.map(book => (
+                            <div key={book.title} className='result-item'>
+                                <h3>{book.title}</h3>
+                                <p>{book.description}</p>
+                                <a href={`/Books/`} className='view-book-link'>View Book</a>
                             </div>
                         ))
                     ) : (
-                        <p>No results found</p>
+                        <p>No results</p>
                     )}
                 </div>
-                <div className="pagination">
-                    {Array.from({ length: totalPages }, (_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => handlePageChange(index + 1)}
-                            disabled={currentPage === index + 1}
-                        >
-                            {index + 1}
-                        </button>
-                    ))}
+                <div className='result-section'>
+                    <h2>Media</h2>
+                    {results.media.length > 0 ? (
+                        results.media.map(media => (
+                            <div key={media.title} className='result-item'>
+                                <h3>{media.title}</h3>
+                                {media.type === 'video' && (
+                                    <VideoEmbed src={media.link} title={media.title} />
+                                )}
+                                {media.type === 'audio' && (
+                                    <SoundCloudEmbed src={media.link} title={media.title} />
+                                )}
+                                {media.type === 'article' && media.image && (
+                                    <>
+                                        <img src={media.image} alt={media.title} className='media-image' />
+                                        <p>Image URL: {media.image}</p> {/* Debugging log */}
+                                    </>
+                                )}
+                            </div>
+                        ))
+                    ) : (
+                        <p>No results</p>
+                    )}
+                </div>
+                <div className='result-section'>
+                    <h2>Publications</h2>
+                    {results.publications.length > 0 ? (
+                        results.publications.map(publication => (
+                            <div key={publication.title} className='result-item'>
+                                <h3>{publication.title}</h3>
+                                <a href={publication.link}>Read Publication</a>
+                            </div>
+                        ))
+                    ) : (
+                        <p>No results</p>
+                    )}
                 </div>
             </div>
             <Footer />
