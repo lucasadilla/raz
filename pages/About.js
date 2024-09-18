@@ -11,7 +11,7 @@ const About = () => {
                 title="About Amir Raz"
                 description="Learn more about Amir Raz, a world-renowned expert on the science of suggestion."
                 openGraph={{
-                    url: 'https://www.amirraz.com/about',
+                    url: 'https://www.amirraz.com/About',
                     title: 'About Amir Raz',
                     description: 'Learn more about Amir Raz, a world-renowned expert on the science of suggestion.',
                     images: [
@@ -22,7 +22,7 @@ const About = () => {
                             alt: 'Amir Raz',
                         },
                     ],
-                    site_name: 'Your Website Name',
+                    site_name: 'Amir Raz',
                 }}
             />
             <Navbar />
