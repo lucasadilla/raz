@@ -1,7 +1,7 @@
-// pages/contact.js
+// pages/Contact.js
+import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import React, { useState } from 'react';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -33,11 +33,18 @@ export default function Contact() {
                 body: JSON.stringify(formData)
             });
 
+            if (!response.ok) {
+                if (response.status === 404) {
+                    throw new Error('API endpoint not found');
+                }
+                throw new Error('Network response was not ok');
+            }
+
             const result = await response.json();
             alert(result.message);
         } catch (error) {
             console.error('Error sending email:', error);
-            alert('Error sending email');
+            alert('Error sending email: ' + error.message);
         }
     };
 
@@ -99,12 +106,12 @@ export default function Contact() {
                                     <label className="wpforms-field-label" htmlFor="reply">Do you need a reply?</label>
                                     <ul id="reply">
                                         <li className="choice-1 depth-1">
-                                            <label className="wpforms-field-label-inline" htmlFor="reply_yes">Yes please</label>
-                                            <input type="radio" id="reply_yes" name="reply" value="Yes please" checked={formData.reply === 'Yes please'} onChange={handleChange} />
+                                            <input type="radio" id="reply-yes" name="reply" value="Yes" checked={formData.reply === 'Yes'} onChange={handleChange} />
+                                            <label htmlFor="reply-yes">Yes</label>
                                         </li>
                                         <li className="choice-2 depth-1">
-                                            <label className="wpforms-field-label-inline" htmlFor="reply_no">No, this is just to let you know</label>
-                                            <input type="radio" id="reply_no" name="reply" value="No, this is just to let you know" checked={formData.reply === 'No, this is just to let you know'} onChange={handleChange} />
+                                            <input type="radio" id="reply-no" name="reply" value="No" checked={formData.reply === 'No'} onChange={handleChange} />
+                                            <label htmlFor="reply-no">No</label>
                                         </li>
                                     </ul>
                                 </div>

@@ -404,9 +404,6 @@ html, body {
     transition: transform 0.3s ease;
 }
 
-.book-item img:hover {
-    transform: translateY(-10px); /* Move the image up slightly on hover */
-}
 
 .book-image-bordered {
     border: 1px solid #ddd; /* Add a thin border */

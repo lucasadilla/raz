@@ -1,5 +1,5 @@
 // api/search.js
-import publications from '../data/publications.json';
+import publications from '../../data/publications.json';
 import media from '../data/media.json';
 
 export default function handler(req, res) {
