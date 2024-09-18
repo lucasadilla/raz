@@ -6,6 +6,6 @@ export default {
         type: 'website',
         locale: 'en_US',
         url: 'https://www.amirraz.com/',
-        site_name: 'Amir Raz',
+        site_name: 'Amir Raz Official Site',
     }
 };
