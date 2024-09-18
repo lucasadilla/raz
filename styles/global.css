@@ -1006,8 +1006,9 @@ html, body {
     padding: 2rem;
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 800px; /* Limit width */
+    max-width: 1000px; /* Limit width */
     width: 100%;
+    margin-top: -1.75rem;
 }
 
 .hestia-title {
@@ -1206,3 +1207,83 @@ html, body {
     margin-bottom: 1rem; /* Space below the text */
 }
 
+/* Ensure the site is responsive */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-items {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    .banner {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .book-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .book-description, .book-additional-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .publication-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .publication-item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .publication-title, .publication-authors, .publication-year {
+        text-align: center;
+    }
+
+    .search-results {
+        padding: 1rem;
+    }
+
+    .result-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .result-item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .result-item h3, .result-item p {
+        text-align: center;
+    }
+}

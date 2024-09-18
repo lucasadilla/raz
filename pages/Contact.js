@@ -55,16 +55,7 @@ export default function Contact() {
                 <div className="col-md-8 page-content-wrap col-md-offset-2">
                     <p><span>Dear Friend,</span></p>
                     <p><span>Thank you for your interest in my research.</span></p>
-                    <p><span>I am typically overextended, working on too many projects, out of</span><br />
-                        <span>time, or simply overwhelmed to respond to every inquiry I receive.</span></p>
-                    <p><span>I need to focus on the projects that I have already committed to and</span><br />
-                        <span>cut down on the time I spend responding to emails.</span></p>
-                    <p><span>With this in mind, here is my suggestion:</span></p>
-                    <p><span>Please use the form below. I do my best to look at incoming inquiries</span><br />
-                        <span>as they come; however, please bear in mind that if you don’t receive a</span><br />
-                        <span>response from me, it’s just a matter of too many emails and too little</span><br />
-                        <span>time.</span></p>
-                    <p><span>Thanks in advance for your understanding.</span></p>
+                    <p><span>I’m often overwhelmed with too many projects, to manage my commitments, I ask that you use the form below.</span></p>
                     <p><span>Suggestibly yours,</span></p>
                     <p><span>-Amir</span></p>
                     <div className="wpforms-container wpforms-container-full" id="wpforms-1280">
