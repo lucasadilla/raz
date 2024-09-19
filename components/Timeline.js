@@ -10,7 +10,7 @@ const Timeline = ({ data }) => {
             const docHeight = document.documentElement.scrollHeight - window.innerHeight;
             const scrollPercent = (scrollTop / docHeight) * 100;
             setScrollPosition(scrollPercent);
-            setLineVisible(scrollTop > 0); // Show line when scrolling starts
+            setLineVisible(scrollTop > 0);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -32,7 +32,7 @@ const Timeline = ({ data }) => {
                                     <img src={item.image} alt={item.title} />
                                 </a>
                             )}
-                            {item.content || (!item.image && <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a>)}
+                            {item.content ? item.content : (!item.image && <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a>)}
                         </div>
                     </div>
                 );

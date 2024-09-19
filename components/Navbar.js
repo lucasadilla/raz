@@ -32,27 +32,27 @@ export default function Navbar() {
                 <ul className="navbar-items">
                     <li>
                         <Link href="/Publications">
-                            <span className="nav-link text-white">PUBLICATIONS</span>
+                            <span className={`nav-link ${router.pathname === '/Publications' ? 'active-link' : ''}`}>PUBLICATIONS</span>
                         </Link>
                     </li>
                     <li>
                         <Link href="/Books">
-                            <span className="nav-link text-white">BOOKS</span>
+                            <span className={`nav-link ${router.pathname === '/Books' ? 'active-link' : ''}`}>BOOKS</span>
                         </Link>
                     </li>
                     <li>
                         <Link href="/Media">
-                            <span className="nav-link text-white">MEDIA</span>
+                            <span className={`nav-link ${router.pathname === '/Media' ? 'active-link' : ''}`}>MEDIA</span>
                         </Link>
                     </li>
                     <li>
                         <Link href="/Contact">
-                            <span className="nav-link text-white">CONTACT</span>
+                            <span className={`nav-link ${router.pathname === '/Contact' ? 'active-link' : ''}`}>CONTACT</span>
                         </Link>
                     </li>
                     <li>
                         <Link href="/About">
-                            <span className="nav-link text-white">ABOUT</span>
+                            <span className={`nav-link ${router.pathname === '/About' ? 'active-link' : ''}`}>ABOUT</span>
                         </Link>
                     </li>
                 </ul>

@@ -36,6 +36,7 @@
     transition: background-color 0.3s;
 }
 
+
 .main-content {
     padding: 0;
     display: flex;
@@ -604,14 +605,14 @@ html, body {
 }
 
 .timeline-line.visible {
-    opacity: 1; /* Fully visible */
+    opacity: 1;
 }
 
 .timeline-item {
     position: relative;
     margin-bottom: 2rem;
     padding-left: 80px;
-    opacity: 0; /* Start hidden */
+    opacity: 1; /* Start hidden */
     transform: translateY(20px); /* Start slightly below */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
 }
