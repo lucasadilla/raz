@@ -1,3 +1,4 @@
+// pages/index.js
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -5,6 +6,7 @@ import { useRouter } from 'next/router';
 import ImageCarousel from "../components/ImageCarousel";
 import RecentPublicationsBanner from "../components/RecentPublicationsBanner";
 import RecentMediaBanner from "../components/RecentMediaBanner";
+import Slideshow from '../components/Slideshow';
 import Link from "next/link";
 
 const images = [
@@ -73,41 +75,29 @@ export default function Home() {
     return (
         <div>
             <Navbar />
+            <Slideshow />
             <main className="main-content index-page">
-                <div className="banner-container">
-                    <img src="/images/longpfp.jpg" alt="Banner" className="banner-image"/>
-                    <div className="banner-text">
-                        <div className="banner-subtext">Psychiatry, Neurology and Neurosurgery, and Psychology</div>
-                        AMIR RAZ
-                        <div className="banner-subtext">
-                            <Link href="/About">
-                                <span className="about-index">ABOUT AMIR RAZ</span>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="scroll-down-arrow" onClick={scrollToContent}>
-                        &#x2193; {/* Downward arrow symbol */}
-                    </div>
-                </div>
                 <div id="content">
-                    <div className="blue-banner">
-                        <div className="new-release-text">NEW RELEASE</div>
-                        <a href="/Books" className="book-image">
-                            <img src="/images/logos/3D cover.png" alt="The Suggestible Brain"
-                                 className="book-image-index"/>
-                        </a>
-                        <div className="left-images">
-                            <img src="/images/suggestible/available.png" alt="Available"/>
-                            <img src="/images/suggestible/oct.png" alt="October"/>
-                            <img src="/images/suggestible/2024.png" alt="2024"/>
+                    <section id="target-section">
+                        <div className="blue-banner">
+                            <div className="new-release-text">NEW RELEASE</div>
+                            <a href="/Books" className="book-image">
+                                <img src="/images/logos/3D cover.png" alt="The Suggestible Brain"
+                                     className="book-image-index"/>
+                            </a>
+                            <div className="left-images">
+                                <img src="/images/suggestible/available.png" alt="Available"/>
+                                <img src="/images/suggestible/oct.png" alt="October"/>
+                                <img src="/images/suggestible/2024.png" alt="2024"/>
+                            </div>
                         </div>
-                    </div>
-                    <RecentPublicationsBanner publications={publications}/>
-                    <RecentMediaBanner media={media}/>
-                    <div className="pictures-section">
-                        <h1>Pictures</h1>
-                        <ImageCarousel images={images}/>
-                    </div>
+                    </section>
+                        <RecentPublicationsBanner publications={publications}/>
+                        <RecentMediaBanner media={media}/>
+                        <div className="pictures-section">
+                            <h1>Pictures</h1>
+                            <ImageCarousel images={images}/>
+                        </div>
                 </div>
             </main>
             <Footer/>
