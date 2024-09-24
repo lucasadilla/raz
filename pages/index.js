@@ -1,4 +1,4 @@
-// pages/index.js
+import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useRouter } from 'next/router';
@@ -6,7 +6,6 @@ import ImageCarousel from "../components/ImageCarousel";
 import RecentPublicationsBanner from "../components/RecentPublicationsBanner";
 import RecentMediaBanner from "../components/RecentMediaBanner";
 import Link from "next/link";
-import React from "react";
 
 const images = [
     { src: "/images/photos/desert.jpeg", alt: "Desert", text: "“Some recent science for dessert”" },
@@ -26,6 +25,50 @@ const media = [
 
 export default function Home() {
     const router = useRouter();
+    const [showModal, setShowModal] = useState(false);
+    const [email, setEmail] = useState('');
+
+    const scrollToContent = () => {
+        const content = document.getElementById('content');
+        if (content) {
+            content.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    const handleBeforeUnload = (event) => {
+        event.preventDefault();
+        setShowModal(true);
+        return (event.returnValue = 'Are you sure you want to leave?');
+    };
+
+    const handleEmailSubmit = async () => {
+        try {
+            const response = await fetch('/api/save-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email }),
+            });
+
+            if (response.ok) {
+                console.log('Email saved successfully');
+            } else {
+                console.error('Failed to save email');
+            }
+        } catch (error) {
+            console.error('Error submitting email:', error);
+        }
+
+        setShowModal(false);
+    };
+
+    useEffect(() => {
+        window.addEventListener('beforeunload', handleBeforeUnload);
+        return () => {
+            window.removeEventListener('beforeunload', handleBeforeUnload);
+        };
+    }, []);
 
     return (
         <div>
@@ -42,27 +85,48 @@ export default function Home() {
                             </Link>
                         </div>
                     </div>
-                </div>
-                <div className="blue-banner">
-                    <div className="new-release-text">NEW RELEASE</div>
-                    <a href="/Books" className="book-image">
-                        <img src="/images/logos/3D cover.png" alt="The Suggestible Brain"
-                             className="book-image-index"/>
-                    </a>
-                    <div className="left-images">
-                        <img src="/images/suggestible/available.png" alt="Available"/>
-                        <img src="/images/suggestible/oct.png" alt="October"/>
-                        <img src="/images/suggestible/2024.png" alt="2024"/>
+                    <div className="scroll-down-arrow" onClick={scrollToContent}>
+                        &#x2193; {/* Downward arrow symbol */}
                     </div>
                 </div>
-                <RecentPublicationsBanner publications={publications}/>
-                <RecentMediaBanner media={media}/>
-                <div className="pictures-section">
-                    <h1>Pictures</h1>
-                    <ImageCarousel images={images}/>
+                <div id="content">
+                    <div className="blue-banner">
+                        <div className="new-release-text">NEW RELEASE</div>
+                        <a href="/Books" className="book-image">
+                            <img src="/images/logos/3D cover.png" alt="The Suggestible Brain"
+                                 className="book-image-index"/>
+                        </a>
+                        <div className="left-images">
+                            <img src="/images/suggestible/available.png" alt="Available"/>
+                            <img src="/images/suggestible/oct.png" alt="October"/>
+                            <img src="/images/suggestible/2024.png" alt="2024"/>
+                        </div>
+                    </div>
+                    <RecentPublicationsBanner publications={publications}/>
+                    <RecentMediaBanner media={media}/>
+                    <div className="pictures-section">
+                        <h1>Pictures</h1>
+                        <ImageCarousel images={images}/>
+                    </div>
                 </div>
             </main>
             <Footer/>
+            {showModal && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <h2>We hate to see you go!</h2>
+                        <p>Would you like to join our mailing list before you leave?</p>
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                        <button onClick={handleEmailSubmit}>Submit</button>
+                        <button onClick={() => setShowModal(false)}>Close</button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

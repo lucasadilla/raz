@@ -21,6 +21,8 @@ export default function Navbar() {
         }
     };
 
+    const isActive = (path) => router.pathname === path ? 'active-link' : '';
+
     return (
         <div>
             <nav className="navbar">
@@ -32,27 +34,27 @@ export default function Navbar() {
                 <ul className="navbar-items">
                     <li>
                         <Link href="/Publications">
-                            <span className={`nav-link ${router.pathname === '/Publications' ? 'active-link' : ''}`}>PUBLICATIONS</span>
+                            <span className={`nav-link ${isActive('/Publications')}`}>PUBLICATIONS</span>
                         </Link>
                     </li>
                     <li>
                         <Link href="/Books">
-                            <span className={`nav-link ${router.pathname === '/Books' ? 'active-link' : ''}`}>BOOKS</span>
+                            <span className={`nav-link ${isActive('/Books')}`}>BOOKS</span>
                         </Link>
                     </li>
                     <li>
                         <Link href="/Media">
-                            <span className={`nav-link ${router.pathname === '/Media' ? 'active-link' : ''}`}>MEDIA</span>
+                            <span className={`nav-link ${isActive('/Media')}`}>MEDIA</span>
                         </Link>
                     </li>
                     <li>
                         <Link href="/Contact">
-                            <span className={`nav-link ${router.pathname === '/Contact' ? 'active-link' : ''}`}>CONTACT</span>
+                            <span className={`nav-link ${isActive('/Contact')}`}>CONTACT</span>
                         </Link>
                     </li>
                     <li>
                         <Link href="/About">
-                            <span className={`nav-link ${router.pathname === '/About' ? 'active-link' : ''}`}>ABOUT</span>
+                            <span className={`nav-link ${isActive('/About')}`}>ABOUT</span>
                         </Link>
                     </li>
                 </ul>

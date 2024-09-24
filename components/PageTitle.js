@@ -7,15 +7,12 @@ const PageTitle = () => {
 
     const titles = {
         '/': 'Home',
-        '/About': 'About',
-        '/Publications': 'Highlights',
-        '/Books': 'Books',
-        '/Media': 'Highlights',
-        '/Research': 'Research',
-        '/Teaching': 'Teaching',
-        '/Pictures': 'Pictures',
-        '/search': 'Search',
-        '/Contact': 'Contact',
+        '/About': 'Learn More About Me',
+        '/Publications': 'Publication Highlights',
+        '/Books': 'Discover My Writing',
+        '/Media': 'Media Highlights',
+        '/search': 'Search Results ',
+        '/Contact': 'Let Me Hear From You!',
     };
 
     const title = titles[route] || 'Page Title';
