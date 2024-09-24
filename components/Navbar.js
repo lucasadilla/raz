@@ -53,6 +53,11 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li>
+                        <Link href="/invite">
+                            <span className={`nav-link ${isActive('/invite')}`}>INVITE</span>
+                        </Link>
+                    </li>
+                    <li>
                         <Link href="/About">
                             <span className={`nav-link ${isActive('/About')}`}>ABOUT</span>
                         </Link>

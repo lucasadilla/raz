@@ -75,7 +75,6 @@ export default function Contact() {
                                 <div className="wpforms-field wpforms-field-select wpforms-one-half wpforms-first wpforms-field-select-style-modern form-group">
                                     <label className="wpforms-field-label" htmlFor="about">What is this about?</label>
                                     <select id="about" className="wpforms-field-medium choicesjs-select choices__input choices__input--hidden" name="about" value={formData.about} onChange={handleChange}>
-                                        <option value="" className="placeholder">A comment</option>
                                         <option value="A comment">A comment</option>
                                         <option value="A question">A question</option>
                                         <option value="An invitation for a talk / lecture">An invitation for a talk / lecture</option>
@@ -86,7 +85,6 @@ export default function Contact() {
                                 <div className="wpforms-field wpforms-field-select wpforms-one-half wpforms-field-select-style-modern form-group">
                                     <label className="wpforms-field-label" htmlFor="urgency">How urgent is this?</label>
                                     <select id="urgency" className="wpforms-field-medium choicesjs-select choices__input choices__input--hidden" name="urgency" value={formData.urgency} onChange={handleChange}>
-                                        <option value="" className="placeholder">Next month is fine</option>
                                         <option value="Next month is fine">Next month is fine</option>
                                         <option value="Next week is ok">Next week is ok</option>
                                         <option value="Next day, please">Next day, please</option>
