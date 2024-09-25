@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const photos = [
-    '/images/AmirRaz.jpg',
+    '/images/AmirRaz.jpeg',
     '/images/longpfp.jpg',
-    '/images/media/raz.jpg',
+    '/images/raz.jpeg',
 ];
 
 const Slideshow = () => {
@@ -13,7 +13,7 @@ const Slideshow = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length);
-        }, 3000); // Change photo every 3 seconds
+        }, 4000); // Change photo every 4 seconds
 
         return () => clearInterval(interval);
     }, []);
@@ -23,6 +23,10 @@ const Slideshow = () => {
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
         }
+    };
+
+    const handleDotClick = (index) => {
+        setCurrentIndex(index);
     };
 
     return (
@@ -45,6 +49,7 @@ const Slideshow = () => {
                     <span
                         key={index}
                         className={`dot ${index === currentIndex ? 'active' : ''}`}
+                        onClick={() => handleDotClick(index)}
                     ></span>
                 ))}
             </div>
