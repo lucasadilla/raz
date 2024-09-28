@@ -1,4 +1,3 @@
-// components/Navbar.js
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -9,6 +8,7 @@ export default function Navbar() {
     const router = useRouter();
     const isHomePage = router.pathname === '/';
     const [searchQuery, setSearchQuery] = useState('');
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleInputChange = (e) => {
         setSearchQuery(e.target.value);
@@ -21,6 +21,10 @@ export default function Navbar() {
         }
     };
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     const isActive = (path) => router.pathname === path ? 'active-link' : '';
 
     return (
@@ -31,7 +35,12 @@ export default function Navbar() {
                         <span className="amir-raz">AMIR RAZ</span>
                     </Link>
                 </div>
-                <ul className="navbar-items">
+                <div className="hamburger-menu" onClick={toggleMenu}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
                     <li>
                         <Link href="/Publications">
                             <span className={`nav-link ${isActive('/Publications')}`}>PUBLICATIONS</span>
@@ -63,7 +72,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                 </ul>
-                <form onSubmit={handleSearchSubmit} className="search-form">
+                <form onSubmit={handleSearchSubmit} className={`search-form ${isMenuOpen ? 'active' : ''}`}>
                     <input
                         type="text"
                         value={searchQuery}
