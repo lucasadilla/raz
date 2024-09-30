@@ -3,11 +3,9 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useRouter } from 'next/router';
-import ImageCarousel from "../components/ImageCarousel";
 import RecentPublicationsBanner from "../components/RecentPublicationsBanner";
 import RecentMediaBanner from "../components/RecentMediaBanner";
 import Slideshow from '../components/Slideshow';
-import Link from "next/link";
 
 const images = [
     { src: "/images/photos/desert.jpeg", alt: "Desert", text: "“Some recent science for dessert”" },
@@ -78,7 +76,6 @@ export default function Home() {
             <Slideshow />
             <main className="main-content index-page">
                 <div id="content">
-                    <section id="target-section">
                         <div className="blue-banner">
                             <div className="new-release-text">NEW RELEASE</div>
                             <a href="/Books" className="book-image">
@@ -91,13 +88,8 @@ export default function Home() {
                                 <img src="/images/suggestible/2024.png" alt="2024"/>
                             </div>
                         </div>
-                    </section>
-                        <RecentPublicationsBanner publications={publications}/>
-                        <RecentMediaBanner media={media}/>
-                        <div className="pictures-section">
-                            <h1>Pictures</h1>
-                            <ImageCarousel images={images}/>
-                        </div>
+                    <RecentPublicationsBanner publications={publications}/>
+                    <RecentMediaBanner media={media}/>
                 </div>
             </main>
             <Footer/>

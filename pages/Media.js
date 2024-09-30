@@ -3,7 +3,6 @@ import VideoEmbed from "../components/VideoEmbed";
 import SoundCloudEmbed from "../components/SoundCloudEmbed";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Timeline from "../components/Timeline";
 
 const Media = () => {
     const [media, setMedia] = useState([]);
@@ -131,9 +130,19 @@ const Media = () => {
         <div>
             <Navbar />
             <main className="main-content media-page">
-                <Timeline data={media} />
+                <div className="media-grid">
+                    {media.map((item, index) => (
+                        <a key={index} href={item.url || item.video} target="_blank" rel="noopener noreferrer"
+                           className="media-item">
+                            <h3>{item.title}</h3>
+                            {item.image && <img src={item.image} alt={item.title}/>}
+                            {item.content}
+                            <p>{item.date}</p>
+                        </a>
+                    ))}
+                </div>
             </main>
-            <Footer />
+            <Footer/>
         </div>
     );
 };

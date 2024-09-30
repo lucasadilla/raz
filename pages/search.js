@@ -55,10 +55,9 @@ const Search = () => {
                                     <SoundCloudEmbed src={media.link} title={media.title} />
                                 )}
                                 {media.type === 'article' && media.image && (
-                                    <>
-                                        <img src={media.image} alt={media.title} className='media-image' />
-                                        <p>Image URL: {media.image}</p> {/* Debugging log */}
-                                    </>
+                                    <a href={media.link} className='media-link'>
+                                        <img src={media.image} alt={media.title} className='media-image'/>
+                                    </a>
                                 )}
                             </div>
                         ))
