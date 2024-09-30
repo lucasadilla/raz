@@ -9,7 +9,6 @@ export default function Navbar() {
     const router = useRouter();
     const isHomePage = router.pathname === '/';
     const [searchQuery, setSearchQuery] = useState('');
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleInputChange = (e) => {
         setSearchQuery(e.target.value);
@@ -24,10 +23,6 @@ export default function Navbar() {
 
     const isActive = (path) => router.pathname === path ? 'active-link' : '';
 
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
-
     return (
         <div>
             <nav className="navbar">
@@ -36,10 +31,7 @@ export default function Navbar() {
                         <span className="amir-raz">AMIR RAZ</span>
                     </Link>
                 </div>
-                <button className="hamburger-menu" onClick={toggleMenu}>
-                    &#9776; {/* Hamburger icon */}
-                </button>
-                <ul className={`navbar-items ${isMenuOpen ? 'open' : ''}`}>
+                <ul className="navbar-items">
                     <li>
                         <Link href="/Publications">
                             <span className={`nav-link ${isActive('/Publications')}`}>PUBLICATIONS</span>
