@@ -132,8 +132,7 @@ const Media = () => {
             <main className="main-content media-page">
                 <div className="media-grid">
                     {media.map((item, index) => (
-                        <a key={index} href={item.url || item.video} target="_blank" rel="noopener noreferrer"
-                           className="media-item">
+                        <a key={index} href={item.url || item.video} target="_blank" rel="noopener noreferrer" className="media-item">
                             <h3>{item.title}</h3>
                             {item.image && <img src={item.image} alt={item.title}/>}
                             {item.content}

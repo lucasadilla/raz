@@ -231,14 +231,15 @@ html, body {
 }
 
 .media-item {
-    width: 100%;
-    max-width: 800px; /* Limit the maximum width */
-    background-color: #ffffff; /* White background for media items */
+    background-color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    border-radius: 8px; /* Rounded corners */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
 }
 
 .media-item:hover {
@@ -252,7 +253,7 @@ html, body {
 }
 
 .media-item p {
-    font-size: 16px; /* Smaller font size for dates */
+    font-size: 1rem;
     color: #666;
     margin-bottom: 10px;
 }
@@ -277,8 +278,9 @@ html, body {
 }
 
 .media-item h3 {
-    font-size: 1rem; /* Smaller font size for the date */
-    color: #666; /* Optional: change color for better readability */
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .page-title {
@@ -562,106 +564,6 @@ html, body {
     margin-bottom: 20px;
 }
 
-.timeline-title {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-.timeline {
-    position: relative;
-    padding: 2rem 0;
-    width: 100%;
-    max-width: 800px;
-}
-
-.timeline-line {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    width: 4px;
-    background: linear-gradient(to bottom, #8cbbe6 0%, #185cbf 100%);
-    transition: height 0.1s ease-out, opacity 0.5s ease-in-out; /* Add opacity transition */
-    border-radius: 2px;
-    opacity: 0;
-}
-
-.timeline-line.visible {
-    opacity: 1;
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: 2rem;
-    padding-left: 80px;
-    opacity: 1; /* Start hidden */
-    transform: translateY(20px); /* Start slightly below */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
-}
-
-.timeline-item.visible {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Move to original position */
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    width: 16px;
-    height: 16px;
-    background: grey;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    transition: background 0.3s ease;
-}
-
-.timeline-item.passed::before {
-    background: #0070f3; /* Color when passed */
-}
-
-.timeline-date {
-    position: absolute;
-    left: -250px; /* Position the date to the left */
-    font-size: 3.25rem; /* Increase font size */
-    color: #333; /* Optional: change color for better readability */
-    margin-bottom: 0.5rem;
-    width: 60px; /* Ensure the date has enough space */
-    text-align: right; /* Align text to the right */
-}
-
-.timeline-content {
-    background: #ffffff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-content img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
-}
-
-.timeline-content img:hover {
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
-}
-
-.timeline-content a {
-    color: #0070f3;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.timeline-content a:hover {
-    color: #005bb5;
-    text-decoration: underline;
-}
-
 .publications-page {
     width: 100%;
     padding: 2rem;
@@ -901,11 +803,12 @@ html, body {
 }
 
 .result-item img {
-    max-width: 100px;
+    max-width: 200px;
     height: auto;
     vertical-align: middle;
     border-radius: 5px;
     margin-right: 10px;
+    margin-bottom: 1rem;
 }
 
 .search-result-item {
@@ -1089,6 +992,13 @@ html, body {
     margin-left: 0.5rem; /* Adjust the space between the text and the radio button */
 }
 
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
 .recent-media-banner {
     width: 100%;
     margin: 0;
@@ -1260,11 +1170,7 @@ html, body {
         align-items: center;
     }
 
-    .result-item img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 1rem;
-    }
+
 
     .result-item h3, .result-item p {
         text-align: center;
