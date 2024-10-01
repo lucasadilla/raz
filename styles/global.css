@@ -473,7 +473,7 @@ html, body {
 
 /* styles/global.css */
 .blue-banner {
-    background-color: rgba(39, 39, 255, 0.9);
+    background-color: rgb(0, 98, 196);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -1193,10 +1193,6 @@ html, body {
         width: 100%; /* Take full width of navbar */
     }
 
-    .navbar-items.open li {
-        width: 100%; /* Ensure each link takes full width */
-        margin: 10px 0; /* Add spacing between links */
-    }
 
     .search-form.open {
         margin-top: 20px; /* Add spacing above the search bar */
@@ -1255,7 +1251,6 @@ html, body {
 
     .left-images img {
         max-width: 100px;
-        margin: 0.5rem;
     }
 
     .book-image-index {
@@ -1282,7 +1277,6 @@ html, body {
     }
 
     .main-content.index-page {
-        padding: 10px;
     }
 
     .banner {
