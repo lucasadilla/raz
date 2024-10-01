@@ -31,7 +31,14 @@ const Slideshow = () => {
 
     return (
         <div className="slideshow">
-            <img src={photos[currentIndex]} alt="Slideshow" className="slideshow-image" />
+            {photos.map((photo, index) => (
+                <img
+                    key={index}
+                    src={photo}
+                    alt="Slideshow"
+                    className={`slideshow-image ${index === currentIndex ? 'active' : ''}`}
+                />
+            ))}
             <div className="banner-text">
                 <div className="banner-subtext">Psychiatry, Neurology and Neurosurgery, and Psychology</div>
                 AMIR RAZ

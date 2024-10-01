@@ -7,10 +7,6 @@ import RecentPublicationsBanner from "../components/RecentPublicationsBanner";
 import RecentMediaBanner from "../components/RecentMediaBanner";
 import Slideshow from '../components/Slideshow';
 
-const images = [
-    { src: "/images/photos/desert.jpeg", alt: "Desert", text: "“Some recent science for dessert”" },
-];
-
 const publications = [
     { title: "Moderate–severe beta-thalassemia intermedia phenotype caused by sextuplicated alpha-globin gene allele in two beta-thalassemia carriers", authors: "Amir Raz, Et al.", link: "https://doi.org/10.1002/ajh.27386" },
     { title: "Suggestion alters Stroop automaticity: Hypnotic alexia through a proactive lens.", authors: "Amir Raz, Et al.", link: "https://psycnet.apa.org/doi/10.1037/cns0000268" },

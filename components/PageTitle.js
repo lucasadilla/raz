@@ -13,7 +13,7 @@ const PageTitle = () => {
         '/Media': 'Media Highlights',
         '/search': 'Search Results ',
         '/Contact': 'Let Me Hear From You!',
-        '/invite': 'Invite Me',
+        '/invite': 'Services Provided',
     };
 
     const title = titles[route] || 'Page Title';
