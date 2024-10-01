@@ -20,7 +20,6 @@ const RecentPublicationsBanner = ({ publications }) => {
                     <div key={index} className="index-publication-item" onClick={() => handleCardClick(publication.link)}>
                         <h3 className="index-publication-title">{publication.title}</h3>
                         <p className="index-publication-authors">{publication.authors}</p>
-                        <p className="index-publication-year">{publication.year}</p>
                     </div>
                 ))}
             </div>

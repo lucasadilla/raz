@@ -1,4 +1,3 @@
-/* styles/global.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -211,7 +210,7 @@ html, body {
 
 .breadcrumbs a {
     text-decoration: none;
-    color: #ffcc00;
+    color: #f4b63e;
 }
 
 .breadcrumbs a:hover {
@@ -238,7 +237,7 @@ html, body {
     display: block;
     margin-top: 5px;
     right: 0;
-    background: #ffcc00;
+    background: #f4b63e;
     transition: width 0.4s ease;
     -webkit-transition: width 0.4s ease;
 }
@@ -246,7 +245,7 @@ html, body {
 .nav-link:hover::after {
     width: 100%;
     left: 0;
-    background: #ffcc00;
+    background: #f4b63e;
 }
 
 .media-page {
@@ -675,15 +674,6 @@ html, body {
     color: #666; /* Optional: change color for better readability */
 }
 
-/* styles/global.css */
-.recent-publications-banner {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 2rem;
-    background-color: #f0f4f8;
-}
-
 
 .publication-image {
     width: 100%;
@@ -711,7 +701,7 @@ html, body {
 }
 
 .index-publication-item {
-    background-color: #ffffff;
+    background-color: #0062c4;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -728,13 +718,13 @@ html, body {
 
 .index-publication-title {
     font-size: 1.25rem;
-    color: #333;
+    color: #d8d8da;
     margin-bottom: 0.5rem;
 }
 
 .index-publication-authors {
     font-size: 1rem;
-    color: #666;
+    color: #000000;
     margin-bottom: 0.5rem;
 }
 
@@ -743,27 +733,12 @@ html, body {
     color: #999;
 }
 
-/* styles/global.css */
-.recent-publications-banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    background-color: #f0f4f8;
-}
-
 .recent-publications-title {
     font-size: 2rem;
-    color: #333;
+    color: #f4b63e;
     margin-bottom: 1rem;
     text-align: center;
-}
-
-.recent-publications-cards {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    font-weight: bold;
 }
 
 .more-publications-button {
@@ -885,7 +860,7 @@ html, body {
 }
 
 .navbar .amir-raz:hover {
-    color: #ffcc00;
+    color: #f4b63e;
 }
 
 .amir-raz-item {
@@ -898,7 +873,7 @@ html, body {
 }
 
 .about-index:hover {
-    color: #ffcc00; /* Color on hover */
+    color: #f4b63e; /* Color on hover */
 }
 
 /* styles/global.css */
@@ -1027,7 +1002,7 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 20px; /* Add padding for better spacing */
-    background-color: #f3eacd; /* Light background color */
+    background-color: #f4b63e; /* Light background color */
     border-radius: 8px; /* Rounded corners */
 }
 
@@ -1038,8 +1013,8 @@ html, body {
 }
 
 .media-card {
-    background: #fff;
-    border: 1px solid #ddd;
+    background: rgba(255, 255, 255, 0.49);
+    border: 1px solid #1d3b66;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -1069,7 +1044,8 @@ html, body {
 /* styles.css or a specific CSS module */
 .banner-title {
     font-size: 2.5rem; /* Adjust the size as needed */
-    color: #333; /* Darker text color */
+    font-weight: bold;
+    color: #0062c4; /* Darker text color */
     margin-bottom: 1rem; /* Space below the title */
     text-align: center; /* Centered title */
 }
@@ -1079,8 +1055,8 @@ html, body {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #0070f3;
-    color: #fff;
+    background-color: #0061c2;
+    color: #d8d8da;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -1089,7 +1065,7 @@ html, body {
 }
 
 .more-media-button:hover {
-    background-color: #005bb5;
+    background-color: #1d3b66;
 }
 
 .media-image {
@@ -1119,7 +1095,7 @@ html, body {
 .new-release-text {
     font-size: 4rem; /* Adjust the size as needed */
     font-weight: bold;
-    color: #ffffff; /* White text color */
+    color: #d8d8da; /* White text color */
     text-align: center;
     margin-bottom: 1rem; /* Space below the text */
 }
@@ -1442,11 +1418,11 @@ html, body {
 }
 
 .nav-link.active-link {
-    color: #ffcc00;
+    color: #f4b63e;
 }
 
 .banner-text {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(29, 59, 102);
     padding: 1rem;
     border-radius: 8px;
     margin: 1rem auto;
@@ -1454,7 +1430,7 @@ html, body {
     top: 40%; /* Adjust as needed */
     left: 19%; /* Move slightly to the left */
     transform: translate(-50%, -50%);
-    color: #ffffff;
+    color: #d8d8da;
     text-align: center;
     font-size: 4.5rem; /* Adjust font size as needed */
     width: 35%; /* Adjust width as needed */
@@ -1472,8 +1448,8 @@ html, body {
     transform: translateX(-50%);
     font-size: 2rem; /* Adjust size as needed */
     cursor: pointer;
-    color: #000000; /* Adjust color as needed */
-    background: rgba(255, 255, 255, 0.9); /* Optional: background for better visibility */
+    color: #1d3b66; /* Adjust color as needed */
+    background: rgb(216, 216, 218); /* Optional: background for better visibility */
     padding: 5px 18px; /* Optional: padding for better click area */
     border-radius: 5px; /* Optional: rounded corners */
     transition: transform 0.3s;
@@ -1535,7 +1511,7 @@ html, body {
 .dot.active {
     width: 15px;
     height: 15px;
-    background-color: #ffcc00;
+    background-color: #f4b63e;
 }
 
 /* styles/global.css */
@@ -1570,14 +1546,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    background-color: #f0f4f8;
-}
-
-.recent-publications-title {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1rem;
-    text-align: center;
+    background-color: #1d3b66;
 }
 
 .recent-publications-cards {
@@ -1588,33 +1557,11 @@ html, body {
     margin-bottom: 1rem;
 }
 
-.index-publication-item {
-    background-color: #ffffff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 30%;
-    margin: 0.5rem;
-    cursor: pointer;
-}
-
 .index-publication-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.index-publication-title {
-    font-size: 1.25rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-}
-
-.index-publication-authors {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 0.5rem;
-}
 
 .index-publication-year {
     font-size: 0.875rem;
