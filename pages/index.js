@@ -84,8 +84,8 @@ export default function Home() {
                                 <img src="/images/suggestible/2024.png" alt="2024"/>
                             </div>
                         </div>
-                    <RecentPublicationsBanner publications={publications}/>
                     <RecentMediaBanner media={media}/>
+                    <RecentPublicationsBanner publications={publications}/>
                 </div>
             </main>
             <Footer/>

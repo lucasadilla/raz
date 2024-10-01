@@ -135,9 +135,9 @@ html, body {
     margin: 0 auto;
     padding: 0;
     position: relative;
-    width: 70%;
+    width: 100%;
     padding-bottom: 39.375%; /* 16:9 aspect ratio */
-    height: 0;
+    height: 70%;
 }
 
 .video-iframe {
@@ -1068,7 +1068,7 @@ html, body {
 
 /* styles.css or a specific CSS module */
 .banner-title {
-    font-size: 1.5rem; /* Adjust the size as needed */
+    font-size: 2.5rem; /* Adjust the size as needed */
     color: #333; /* Darker text color */
     margin-bottom: 1rem; /* Space below the title */
     text-align: center; /* Centered title */

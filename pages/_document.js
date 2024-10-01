@@ -9,8 +9,8 @@ class MyDocument extends Document {
                     <link rel="icon" href="/images/razLogo.png"/>
                 </Head>
                 <body>
-                <Main/>
-                <NextScript />
+                    <Main/>
+                    <NextScript />
                 </body>
             </Html>
         );

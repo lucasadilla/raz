@@ -27,7 +27,7 @@ const RecentMediaBanner = ({ media }) => {
 
     return (
         <div className="recent-media-banner">
-            <h2 className="banner-title">Recent Media</h2>
+            <h2 className="banner-title">Media Highlights</h2>
             <div className="media-cards">
                 {media.map((item, index) => (
                     <div key={index} className="media-card">
