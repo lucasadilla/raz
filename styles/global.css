@@ -154,15 +154,39 @@ html, body {
     background-color: #0062c4;
     color: #ffffff;
     padding: 1rem;
-    text-align: center;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 .footer-content {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
     align-items: center;
-    justify-content: center;
-    gap: 30rem;
+}
+
+.footer-content span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0;
+    margin-left: auto;
+}
+
+.footer-link {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }
 
 /* styles/global.css */

@@ -5,10 +5,11 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                    <link rel="icon" href="/images/razLogo.png"/>
                 </Head>
                 <body>
-                <Main />
+                <Main/>
                 <NextScript />
                 </body>
             </Html>

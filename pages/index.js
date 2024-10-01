@@ -71,7 +71,7 @@ export default function Home() {
             <Navbar />
             <Slideshow />
             <main className="main-content index-page">
-                <div id="content">
+                <div id="target-section">
                         <div className="blue-banner">
                             <div className="new-release-text">NEW RELEASE</div>
                             <a href="/Books" className="book-image">
