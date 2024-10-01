@@ -473,7 +473,7 @@ html, body {
 
 /* styles/global.css */
 .blue-banner {
-    background-color: rgba(39, 39, 255, 0.9); /* Blue background */
+    background-color: rgba(39, 39, 255, 0.9);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -1124,7 +1124,6 @@ html, body {
     margin-bottom: 1rem; /* Space below the text */
 }
 
-/* Ensure the site is responsive */
 html, body {
     width: 100%;
     height: 100%;
@@ -1133,8 +1132,94 @@ html, body {
     overflow-x: hidden;
 }
 
-/* Media queries for responsive design */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none; /* Hide hamburger menu on desktop */
+    }
+
+    .navbar-items, .search-form {
+        visibility: visible; /* Ensure all items are visible on desktop */
+        position: relative; /* Normal positioning */
+        opacity: 1; /* Fully visible */
+        display: flex; /* Display as flex */
+    }
+}
+
 @media (max-width: 768px) {
+
+    .navbar-items, .search-form {
+        visibility: hidden; /* Hide items */
+        position: absolute; /* Remove from the document flow */
+        opacity: 0; /* Make it invisible */
+        transition: visibility 0s, opacity 0.3s ease-in-out; /* Smooth transition */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+        position: absolute;
+        left: 20px; /* Adjust this value to control the distance from the left */
+        top: 20px; /* Adjust this value to control the distance from the top */
+        font-size: 2rem; /* Increase the size of the hamburger icon */
+        cursor: pointer;
+    }
+
+    /* When the menu is open, show the links and search bar */
+    .navbar-items.open, .search-form.open {
+        visibility: visible;
+        position: relative;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the items horizontally */
+        justify-content: center; /* Center the items vertically */
+        text-align: center; /* Center the text */
+        width: 100%; /* Take full width of navbar */
+    }
+
+    .navbar-items.open li {
+        width: 100%; /* Ensure each link takes full width */
+        margin: 10px 0; /* Add spacing between links */
+    }
+
+    .search-form.open {
+        margin-top: 20px; /* Add spacing above the search bar */
+    }
+
+    .search-input {
+        width: 80%; /* Make search input take up 80% of the width */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    .search-button {
+        width: 50%; /* Make the button smaller */
+        padding: 10px;
+    }
+
+    .amir-raz-item {
+        margin: 0 auto; /* Center the logo horizontally */
+        display: flex;
+        justify-content: center;
+        width: 100%; /* Ensure it takes full width */
+    }
+
+    .banner-text {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .banner-subtext {
+        font-size: 0.875rem;
+    }
+
+    .scroll-down-arrow {
+        font-size: 1.5rem;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -1145,8 +1230,42 @@ html, body {
         gap: 0.5rem;
     }
 
-    .main-content {
+    .blue-banner {
         padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-images img {
+        max-width: 100px;
+        margin: 0.5rem;
+    }
+
+    .book-image-index {
+        max-width: 90%;
+    }
+
+    .recent-media-banner, .recent-publications-banner {
+        padding: 10px;
+    }
+
+    .media-card, .index-publication-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .media-cards, .recent-publications-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .more-media-button, .more-publications-button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main-content.index-page {
+        padding: 10px;
     }
 
     .banner {
@@ -1194,10 +1313,37 @@ html, body {
         align-items: center;
     }
 
-
-
     .result-item h3, .result-item p {
         text-align: center;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links, .search-bar {
+        display: none;
+    }
+
+    .nav-links.active, .search-bar.active {
+        display: block;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between; /* Distribute space between items */
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content span {
+        position: static; /* Remove absolute positioning */
+        margin-left: 2rem; /* Adjust the margin to move text to the left */
+    }
+
+    .footer-content p {
+        margin-right: 1rem; /* Adjust the margin to move text to the right */
+        text-align: right; /* Ensure text is aligned to the right */
     }
 }
 
@@ -1206,7 +1352,6 @@ html, body {
     position: relative;
     text-align: center;
 }
-
 
 .modal {
     position: fixed;

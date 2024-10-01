@@ -9,6 +9,7 @@ export default function Navbar() {
     const router = useRouter();
     const isHomePage = router.pathname === '/';
     const [searchQuery, setSearchQuery] = useState('');
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const handleInputChange = (e) => {
         setSearchQuery(e.target.value);
@@ -23,6 +24,10 @@ export default function Navbar() {
 
     const isActive = (path) => router.pathname === path ? 'active-link' : '';
 
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
         <div>
             <nav className="navbar">
@@ -31,7 +36,12 @@ export default function Navbar() {
                         <span className="amir-raz">AMIR RAZ</span>
                     </Link>
                 </div>
-                <ul className="navbar-items">
+                {/* Hamburger icon for mobile view */}
+                <div className="hamburger" onClick={toggleMenu}>
+                    &#9776; {/* Hamburger icon */}
+                </div>
+                {/* Navbar links */}
+                <ul className={`navbar-items ${menuOpen ? 'open' : ''}`}>
                     <li>
                         <Link href="/Publications">
                             <span className={`nav-link ${isActive('/Publications')}`}>PUBLICATIONS</span>
@@ -63,7 +73,8 @@ export default function Navbar() {
                         </Link>
                     </li>
                 </ul>
-                <form onSubmit={handleSearchSubmit} className="search-form">
+                {/* Search bar */}
+                <form onSubmit={handleSearchSubmit} className={`search-form ${menuOpen ? 'open' : ''}`}>
                     <input
                         type="text"
                         value={searchQuery}
