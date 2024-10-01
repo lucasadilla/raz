@@ -1147,6 +1147,23 @@ html, body {
 
 @media (max-width: 768px) {
 
+    .slideshow-image {
+        width: 100%; /* Makes images responsive */
+        height: auto; /* Maintains aspect ratio */
+    }
+
+    .scroll-down-arrow {
+        font-size: 2rem; /* Increase size for easier tapping */
+        padding: 10px; /* Add some padding around the arrow */
+    }
+
+    .dot {
+        width: 12px; /* Increase dot size */
+        height: 12px; /* Increase dot size */
+        cursor: pointer; /* Show pointer cursor on hover */
+    }
+
+
     .navbar-items, .search-form {
         visibility: hidden; /* Hide items */
         position: absolute; /* Remove from the document flow */
@@ -1203,12 +1220,12 @@ html, body {
     }
 
     .banner-text {
-        font-size: 1.5rem;
+        font-size: 0.5rem;
         padding: 0.5rem;
     }
 
     .banner-subtext {
-        font-size: 0.875rem;
+        font-size: 0.75rem;
     }
 
     .scroll-down-arrow {
@@ -1345,6 +1362,33 @@ html, body {
         margin-right: 1rem; /* Adjust the margin to move text to the right */
         text-align: right; /* Ensure text is aligned to the right */
     }
+
+    .banner-text .banner-subtext {
+        font-size: 0.75rem; /* Adjust the font size for mobile view */
+    }
+
+    .about-index {
+        font-size: 1rem; /* Adjust the font size for mobile view */
+    }
+    .slideshow .banner-text {
+        font-size: 2rem; /* Example adjustment */
+    }
+
+    .slideshow .scroll-down-arrow {
+        font-size: 2rem; /* Example adjustment */
+    }
+
+    .slideshow-image {
+        width: 100%; /* Make images fill the container width */
+        height: auto; /* Maintain the aspect ratio */
+        max-height: 300px; /* Set a maximum height if desired */
+        object-fit: cover; /* Optional: ensures the image covers the area */
+    }
+
+    .recent-publications-cards {
+        width: 290%; /* Increase the width to 90% for mobile view */
+    }
+
 }
 
 /* styles/global.css */

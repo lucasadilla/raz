@@ -69,8 +69,9 @@ export default function Home() {
     return (
         <div>
             <Navbar />
-            <Slideshow />
+
             <main className="main-content index-page">
+                <Slideshow />
                 <div id="target-section">
                         <div className="blue-banner">
                             <div className="new-release-text">NEW RELEASE</div>
