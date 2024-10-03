@@ -73,14 +73,21 @@
   },
   {
     "year": 2017,
-    "title": "YouTube Video",
+    "title": "When can deception be good for you? | Amir Raz | TEDxMontreal",
+    "authors": "",
+    "link": "https://www.youtube.com/embed/XcUGHTEVgk0?si=oe_leeIvzR7iPwuN",
+    "type": "video"
+  },
+  {
+    "year": 2017,
+    "title": "Exploring the Power of Suggestion: An Interview with Amir Raz",
     "authors": "",
     "link": "https://www.youtube.com/embed/3evqptjrGGs",
     "type": "video"
   },
   {
     "year": 2017,
-    "title": "Vimeo Video",
+    "title": "Keynote Speech at Chapman University",
     "authors": "",
     "link": "https://player.vimeo.com/video/221348961",
     "type": "video"
@@ -145,16 +152,24 @@
   },
   {
     "year": 2013,
-    "title": "Vimeo Video",
+    "title": "The Raz Lab in Brain Magic: The Power of Placebo — CBC Documentary",
     "authors": "",
     "link": "https://player.vimeo.com/video/117024196?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     "type": "video"
   },
   {
     "year": 2013,
-    "title": "YouTube Video",
+    "title": "Neural Correlates of Altered Consciousness: Hypnosis, Meditation, & Drug-Based Changes - Amir Raz",
     "authors": "",
     "link": "https://www.youtube.com/embed/vLAvoaln8oU",
     "type": "video"
+  },
+  {
+    "year": 2005,
+    "title": "Unblocking the Mind: Hypnosis can override automatic processes in the brain",
+    "authors": "",
+    "link": "https://www.science.org/content/article/unblocking-mind",
+    "type": "article",
+    "image": "/images/media/unblocking.jpg"
   }
 ]

@@ -64,12 +64,17 @@ const Media = () => {
             {
                 date: "July, 2017",
                 content: <VideoEmbed src="https://www.youtube.com/embed/3evqptjrGGs" title="YouTube Video" />,
-                title: "YouTube Video"
+                title: "Exploring the Power of Suggestion"
             },
             {
                 date: "June, 2017",
                 content: <VideoEmbed src="https://player.vimeo.com/video/221348961" title="Vimeo Video" />,
-                title: "Vimeo Video"
+                title: "Keynote Speech at Chapman University"
+            },
+            {
+                date: "June, 2017",
+                content: <VideoEmbed src="https://www.youtube.com/embed/XcUGHTEVgk0?si=oe_leeIvzR7iPwuN" title="When can deception be good for you? | Amir Raz | TEDxMontreal" />,
+                title: "When can deception be good for you? | Amir Raz | TEDxMontreal",
             },
             {
                 date: "June, 2017",
@@ -115,13 +120,43 @@ const Media = () => {
             },
             {
                 date: "October, 2013",
-                content: <VideoEmbed src="https://player.vimeo.com/video/117024196?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="Vimeo Video" />,
-                title: "Vimeo Video"
+                content: <VideoEmbed src="https://player.vimeo.com/video/117024196?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="The Raz Lab in Brain Magic: The Power of Placebo — CBC Documentary" />,
+                title: "The Raz Lab in Brain Magic: The Power of Placebo — CBC Documentary"
             },
             {
                 date: "July, 2013",
                 content: <VideoEmbed src="https://www.youtube.com/embed/vLAvoaln8oU" title="YouTube Video" />,
-                title: "YouTube Video"
+                title: "Neural Correlates of Altered Consciousness"
+            },
+            {
+                date: "October, 2008",
+                url: "https://www.mcgilldaily.com/2008/10/haunted_minds/",
+                title: "Haunted minds",
+                image: "/images/media/Mcgilldaily.png"
+            },
+            {
+                date: "May, 2007",
+                url: "http://www.reporter-archive.mcgill.ca/39/18/profile/index.html",
+                title: "Amir Raz: Waking up to potential of hypnosis",
+                image: "/images/media/waking.jpg"
+            },
+            {
+                date: "March, 2006",
+                url: "https://www.apa.org/monitor/mar06/lab",
+                title: "From the stage to the lab",
+                image: "/images/media/APA.jpg"
+            },
+            {
+                date: "August, 2005",
+                url: "https://news.cornell.edu/stories/2005/08/hypnotic-suggestion-can-reduce-conflict-human-brain",
+                title: "Hypnotic suggestion can reduce conflict in human brain",
+                image: "/images/media/cornell.png"
+            },
+            {
+                date: "June, 2005",
+                url: "https://www.science.org/content/article/unblocking-mind",
+                title: "Unblocking the Mind: Hypnosis can override automatic processes in the brain",
+                image: "/images/media/unblocking.jpg"
             }
         ]);
     }, []);

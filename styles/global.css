@@ -302,7 +302,7 @@ html, body {
 
 .media-item h3 {
     font-size: 1.25rem;
-    color: #333;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -398,9 +398,9 @@ html, body {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid #ddd; /* Add a thin border */
+    border: 2px solid #000000; /* Add a thin border */
     border-radius: 8px; /* Optional: add border radius for styling */
-    background-color: rgba(223, 206, 206, 0.94); /* Set the background color */
+    background-color: rgba(255, 255, 255, 0.93); /* Set the background color */
 }
 
 .book-item img {
@@ -458,7 +458,8 @@ html, body {
     align-items: flex-start;
     margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid #ddd; /* Add a thin border */
+    border: 2px solid #000000; /* Add a thin border */
+    box-shadow: 5px 6px 1px rgb(0, 0, 0); /* Subtle shadow */
     border-radius: 8px; /* Optional: add border radius for styling */
 }
 
