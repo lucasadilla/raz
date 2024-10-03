@@ -250,11 +250,11 @@ html, body {
 
 .media-page {
     background-image: repeating-linear-gradient(45deg, rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 2px, transparent 2px, transparent 4px),
-    linear-gradient(0deg, rgb(70, 143, 234), rgb(187, 235, 205));
+    linear-gradient(0deg, rgb(0, 97, 194), rgb(244, 182, 62));
 }
 
 .media-item {
-    background-color: #ffffff;
+    background-color: #f7d89c;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -568,7 +568,11 @@ html, body {
     height: auto;
     object-fit: cover;
     border-radius: 8px;
+    margin-top: 1rem;
     margin-bottom: 20px;
+    border: 2px solid #1d3b65; /* Light gray border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px; /* Add space between the border and the image */
 }
 
 .about-title {
@@ -623,8 +627,9 @@ html, body {
 
 .publications-page .publication-item .publication-title {
     font-size: 1.5rem; /* Larger font size for titles */
-    color: #333;
+    color: #000000;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .publications-page .publication-item .publication-year {
@@ -701,7 +706,7 @@ html, body {
 }
 
 .index-publication-item {
-    background-color: #0062c4;
+    background-color: #000000;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -718,13 +723,13 @@ html, body {
 
 .index-publication-title {
     font-size: 1.25rem;
-    color: #d8d8da;
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 
 .index-publication-authors {
     font-size: 1rem;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 
@@ -735,7 +740,7 @@ html, body {
 
 .recent-publications-title {
     font-size: 2rem;
-    color: #f4b63e;
+    color: #000000;
     margin-bottom: 1rem;
     text-align: center;
     font-weight: bold;
@@ -889,8 +894,9 @@ html, body {
 .page-content-wrap {
     background-color: #ffffff; /* White background for content */
     padding: 2rem;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 20px; /* Rounded corners */
+    border: 1px solid #000000; /* Light border */
+    box-shadow: 5px 6px 1px rgb(0, 0, 0); /* Subtle shadow */
     max-width: 1000px; /* Limit width */
     width: 100%;
     margin-top: -1.75rem;
@@ -905,7 +911,7 @@ html, body {
 
 .page-content-wrap p {
     font-size: 1rem; /* Consistent font size */
-    color: #555; /* Medium text color */
+    color: #000000; /* Medium text color */
     line-height: 1.6; /* Better line spacing */
     margin-bottom: 1rem; /* Space below paragraphs */
 }
@@ -916,7 +922,7 @@ html, body {
 
 .wpforms-title {
     font-size: 1.5rem; /* Larger form title */
-    color: #333; /* Darker text color */
+    color: #000000; /* Darker text color */
     margin-bottom: 1rem; /* Space below form title */
     text-align: center; /* Centered form title */
 }
@@ -934,7 +940,7 @@ html, body {
 
 .wpforms-field label {
     font-size: 0.875rem; /* Smaller label */
-    color: #333; /* Darker text color */
+    color: #000000; /* Darker text color */
     margin-bottom: 0.5rem; /* Space below label */
     display: block; /* Block display */
 }
@@ -964,7 +970,7 @@ html, body {
     padding: 0.75rem 1.5rem; /* Larger padding */
     font-size: 1rem; /* Consistent font size */
     color: #fff; /* White text */
-    background-color: #0070f3; /* Primary color */
+    background-color: #000000; /* Primary color */
     border: none; /* No border */
     border-radius: 4px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor */
@@ -972,7 +978,7 @@ html, body {
 }
 
 .wpforms-submit:hover {
-    background-color: #005bb5; /* Darker on hover */
+    background-color: #f4b63e;
 }
 
 /* styles/global.css */
@@ -1003,7 +1009,6 @@ html, body {
     margin: 0;
     padding: 20px; /* Add padding for better spacing */
     background-color: #f4b63e; /* Light background color */
-    border-radius: 8px; /* Rounded corners */
 }
 
 .media-cards {
@@ -1546,7 +1551,11 @@ html, body {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    background-color: #1d3b66;
+    background-color: #fff; /* Light background color */
+    background-image:
+            linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+            linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
 }
 
 .recent-publications-cards {

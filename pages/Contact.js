@@ -55,7 +55,7 @@ export default function Contact() {
                 <div className="col-md-8 page-content-wrap col-md-offset-2">
                     <p><span>Dear Friend,</span></p>
                     <p><span>Thank you for your interest in my research.</span></p>
-                    <p><span>I’m often overwhelmed with too many projects to manage my commitments, I ask that you use the form below.</span></p>
+                    <p><span>Please fill out the form below and I will do my best to read and act accordingly.</span></p>
                     <p><span>Suggestibly yours,</span></p>
                     <p><span>-Amir</span></p>
                     <div className="wpforms-container wpforms-container-full" id="wpforms-1280">

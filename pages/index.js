@@ -14,7 +14,7 @@ const publications = [
 ];
 
 const media = [
-    { title: "Rosenthal with Amir Raz", source: "", link: "https://www.msch.us/education/2022-rosenthal-with-amir-raz/", image: "/images/media/raz.jpg" },
+    { title: "When can deception be good for you? | Amir Raz | TEDxMontreal", source: "", link: "https://www.youtube.com/embed/XcUGHTEVgk0?si=oe_leeIvzR7iPwuN", video:"https://www.youtube.com/embed/XcUGHTEVgk0?si=oe_leeIvzR7iPwuN" },
     { title: "Amir Raz on the Science of Suggestion", source: "", link: "https://news.chapman.edu/2021/12/15/chapmans-brain-institute-applies-modern-tools-of-neuroscience-to-answer-age-old-questions-of-free-will/", image: "/images/media/chapman.jpg" },
     { title: "Finding Your Soul Podcast", source: "", link: "https://www.youtube.com/embed/vg540H9uHuA", video:"https://www.youtube.com/embed/vg540H9uHuA" },
 ];
@@ -79,11 +79,6 @@ export default function Home() {
                                 <img src="/images/logos/3D cover.png" alt="The Suggestible Brain"
                                      className="book-image-index"/>
                             </a>
-                            <div className="left-images">
-                                <img src="/images/suggestible/available.png" alt="Available"/>
-                                <img src="/images/suggestible/oct.png" alt="October"/>
-                                <img src="/images/suggestible/2024.png" alt="2024"/>
-                            </div>
                         </div>
                     <RecentMediaBanner media={media}/>
                     <RecentPublicationsBanner publications={publications}/>
