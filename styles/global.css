@@ -1243,9 +1243,16 @@ html, body {
         padding: 10px;
     }
 
-    .media-card, .index-publication-item {
+    .media-card {
         width: 100%;
         margin: 10px 0;
+    }
+
+    .index-publication-item {
+        width: 100%; /* Adjust the width as needed */
+        max-width: 400px; /* Set a maximum width */
+        padding: 1rem; /* Adjust the padding */
+        margin: 10px auto; /* Center the items and add margin */
     }
 
     .media-cards, .recent-publications-cards {
@@ -1428,15 +1435,17 @@ html, body {
 }
 
 .banner-text {
-    background-color: rgb(29, 59, 102);
+    background-color: rgba(37, 68, 112, 0.97);
     padding: 1rem;
     border-radius: 8px;
+    border: 2px solid #000000;
+    box-shadow: 5px 6px 1px rgb(0, 0, 0);
     margin: 1rem auto;
     position: absolute;
     top: 40%; /* Adjust as needed */
     left: 19%; /* Move slightly to the left */
     transform: translate(-50%, -50%);
-    color: #d8d8da;
+    color: #ffffff;
     text-align: center;
     font-size: 4.5rem; /* Adjust font size as needed */
     width: 35%; /* Adjust width as needed */
