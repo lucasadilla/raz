@@ -1,4 +1,3 @@
-// pages/index.js
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -6,6 +5,7 @@ import { useRouter } from 'next/router';
 import RecentPublicationsBanner from "../components/RecentPublicationsBanner";
 import RecentMediaBanner from "../components/RecentMediaBanner";
 import Slideshow from '../components/Slideshow';
+import { NextSeo } from 'next-seo';
 
 const publications = [
     { title: "Moderate–severe beta-thalassemia intermedia phenotype caused by sextuplicated alpha-globin gene allele in two beta-thalassemia carriers", authors: "Amir Raz, Et al.", link: "https://doi.org/10.1002/ajh.27386" },
@@ -68,18 +68,34 @@ export default function Home() {
 
     return (
         <div>
+            <NextSeo
+                title="Home - Amir Raz"
+                description="Welcome to the official website of Amir Raz. Explore recent publications, media appearances, and more."
+                openGraph={{
+                    url: 'https://www.amirraz.com',
+                    title: 'Home - Amir Raz',
+                    description: 'Welcome to the official website of Amir Raz. Explore recent publications, media appearances, and more.',
+                    images: [
+                        {
+                            url: 'https://www.amirraz.com/images/home/cover.png',
+                            width: 800,
+                            height: 600,
+                            alt: 'Home - Amir Raz',
+                        },
+                    ],
+                    site_name: 'Amir Raz',
+                }}
+            />
             <Navbar />
-
             <main className="main-content index-page">
                 <Slideshow />
                 <div id="target-section">
-                        <div className="blue-banner">
-                            <div className="new-release-text">NEW RELEASE</div>
-                            <a href="/Books" className="book-image">
-                                <img src="/images/logos/3D cover.png" alt="The Suggestible Brain"
-                                     className="book-image-index"/>
-                            </a>
-                        </div>
+                    <div className="blue-banner">
+                        <div className="new-release-text">NEW RELEASE</div>
+                        <a href="/Books" className="book-image">
+                            <img src="/images/logos/3D cover.png" alt="The Suggestible Brain" className="book-image-index"/>
+                        </a>
+                    </div>
                     <RecentMediaBanner media={media}/>
                     <RecentPublicationsBanner publications={publications}/>
                 </div>

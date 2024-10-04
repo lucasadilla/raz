@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import React from 'react';
+import { NextSeo } from 'next-seo';
 
 const Search = () => {
     const router = useRouter();
@@ -25,6 +26,24 @@ const Search = () => {
 
     return (
         <div>
+            <NextSeo
+                title={`Search results for "${query}" - Amir Raz`}
+                description={`Explore search results for "${query}" on Amir Raz's official website, including books, media, and publications.`}
+                openGraph={{
+                    url: `https://www.amirraz.com/search?query=${query}`,
+                    title: `Search results for "${query}" - Amir Raz`,
+                    description: `Explore search results for "${query}" on Amir Raz's official website, including books, media, and publications.`,
+                    images: [
+                        {
+                            url: 'https://www.amirraz.com/images/search/cover.png',
+                            width: 800,
+                            height: 600,
+                            alt: `Search results for "${query}" - Amir Raz`,
+                        },
+                    ],
+                    site_name: 'Amir Raz',
+                }}
+            />
             <Navbar />
             <div className='search-results'>
                 <h1>Search results for "{query}"</h1>

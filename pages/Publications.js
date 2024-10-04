@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useRouter } from 'next/router';
+import { NextSeo } from 'next-seo';
 
 const Publications = () => {
     const [publications, setPublications] = useState([]);
@@ -854,6 +855,24 @@ const Publications = () => {
 
     return (
         <div>
+            <NextSeo
+                title="Publications - Amir Raz"
+                description="Explore the extensive list of publications by Amir Raz, covering topics in psychiatry, neurology, and psychology."
+                openGraph={{
+                    url: 'https://www.amirraz.com/publications',
+                    title: 'Publications - Amir Raz',
+                    description: 'Explore the extensive list of publications by Amir Raz, covering topics in psychiatry, neurology, and psychology.',
+                    images: [
+                        {
+                            url: 'https://www.amirraz.com/images/publications/raz.jpg',
+                            width: 800,
+                            height: 600,
+                            alt: 'Publications - Amir Raz',
+                        },
+                    ],
+                    site_name: 'Amir Raz',
+                }}
+            />
             <Navbar />
             <main className="main-content publications-page">
                 {publications.map((publication, index) => (

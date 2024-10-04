@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { NextSeo } from 'next-seo';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -50,6 +51,24 @@ export default function Contact() {
 
     return (
         <div>
+            <NextSeo
+                title="Contact Amir Raz"
+                description="Get in touch with Amir Raz for inquiries, comments, or questions. Fill out the contact form and Amir will respond as soon as possible."
+                openGraph={{
+                    url: 'https://www.amirraz.com/Contact',
+                    title: 'Contact Amir Raz',
+                    description: 'Get in touch with Amir Raz for inquiries, comments, or questions. Fill out the contact form and Amir will respond as soon as possible.',
+                    images: [
+                        {
+                            url: 'https://www.amirraz.com/images/contact/cover.png',
+                            width: 800,
+                            height: 600,
+                            alt: 'Contact Amir Raz',
+                        },
+                    ],
+                    site_name: 'Amir Raz',
+                }}
+            />
             <Navbar />
             <main className="main-content contact-page">
                 <div className="col-md-8 page-content-wrap col-md-offset-2">

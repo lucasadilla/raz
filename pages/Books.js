@@ -1,10 +1,29 @@
 // pages/Books.js
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { NextSeo } from 'next-seo';
 
 const Books = () => {
     return (
         <div>
+            <NextSeo
+                title="Books by Amir Raz"
+                description="Explore the books authored by Amir Raz, covering topics such as the science of suggestion, brain imaging, cognitive fitness, and more."
+                openGraph={{
+                    url: 'https://www.amirraz.com/Books',
+                    title: 'Books by Amir Raz',
+                    description: 'Explore the books authored by Amir Raz, covering topics such as the science of suggestion, brain imaging, cognitive fitness, and more.',
+                    images: [
+                        {
+                            url: 'https://www.amirraz.com/images/books/cover.png',
+                            width: 800,
+                            height: 600,
+                            alt: 'Books by Amir Raz',
+                        },
+                    ],
+                    site_name: 'Amir Raz',
+                }}
+            />
             <Navbar/>
             <main className="main-content books-page">
                 <div className="book-item no-border">
@@ -18,11 +37,11 @@ const Books = () => {
                             others, and create social impact.</p>
                         <p className="book-buy-link">Available for purchase at:</p>
                         <p className="book-buy-image"><a href="https://www.amazon.com/Suggestible-Brain-Science-Magic-Minds-ebook/dp/B0CV431V8X"><img src="/images/books/logos/amazon.png"
-                                                                       alt="Buy Now"/></a></p>
+                                                                                                                                                      alt="Buy Now"/></a></p>
                         <p className="book-buy-image"><a href="https://www.hachettebookgroup.com/titles/amir-raz-phd/the-suggestible-brain/9780306833434/?lens=hachette-go"><img src="/images/books/logos/hachette.png"
-                                                                       alt="Buy Now"/></a></p>
+                                                                                                                                                                                 alt="Buy Now"/></a></p>
                         <p className="book-buy-image"><a href="https://www.hachettespeakersbureau.com/titles/amir-raz-phd/the-suggestible-brain/9781668644799/"><img src="/images/books/logos/hachette-audio.png"
-                                                                       alt="Buy Now"/></a></p>
+                                                                                                                                                                     alt="Buy Now"/></a></p>
                     </div>
                 </div>
                 <div className="book-item">

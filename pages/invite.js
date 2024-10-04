@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 const sections = [
     { title: "Corporate", buttonText: "Book Now", imageUrl: "/images/invite/corporate.png" },
@@ -16,10 +17,28 @@ const sections = [
 const Invite = () => {
     return (
         <div>
+            <NextSeo
+                title="Invite Amir Raz"
+                description="Book Amir Raz for corporate events, small group sessions, individual sessions, public speaking, coaching, and consulting."
+                openGraph={{
+                    url: 'https://www.amirraz.com/invite',
+                    title: 'Invite Amir Raz',
+                    description: 'Book Amir Raz for corporate events, small group sessions, individual sessions, public speaking, coaching, and consulting.',
+                    images: [
+                        {
+                            url: 'https://www.amirraz.com/images/invite/cover.png',
+                            width: 800,
+                            height: 600,
+                            alt: 'Invite Amir Raz',
+                        },
+                    ],
+                    site_name: 'Amir Raz',
+                }}
+            />
             <Navbar />
             <div className="invite-container">
                 {sections.map((section, index) => (
-                    <div className="invite-tile">
+                    <div className="invite-tile" key={index}>
                         <div className="invite-image-container">
                             <img src={section.imageUrl} alt="Invite Image" className="invite-image"/>
                         </div>

@@ -1151,11 +1151,6 @@ html, body {
         margin: 0.5rem; /* Smaller margin */
     }
 
-    .slideshow-image {
-        width: 100%; /* Makes images responsive */
-        height: auto; /* Maintains aspect ratio */
-    }
-
     .scroll-down-arrow {
         font-size: 2rem; /* Increase size for easier tapping */
         padding: 10px; /* Add some padding around the arrow */

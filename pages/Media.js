@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import VideoEmbed from "../components/VideoEmbed";
 import SoundCloudEmbed from "../components/SoundCloudEmbed";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer"
+import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 const Media = () => {
     const [media, setMedia] = useState([]);
@@ -274,6 +276,24 @@ const Media = () => {
 
     return (
         <div>
+            <NextSeo
+                title="Media - Amir Raz"
+                description="Explore media appearances and publications featuring Amir Raz, including articles, videos, and interviews."
+                openGraph={{
+                    url: 'https://www.amirraz.com/media',
+                    title: 'Media - Amir Raz',
+                    description: 'Explore media appearances and publications featuring Amir Raz, including articles, videos, and interviews.',
+                    images: [
+                        {
+                            url: 'https://www.amirraz.com/images/media/raz.jpg',
+                            width: 800,
+                            height: 600,
+                            alt: 'Media - Amir Raz',
+                        },
+                    ],
+                    site_name: 'Amir Raz',
+                }}
+            />
             <Navbar />
             <main className="main-content media-page">
                 <div className="media-grid">

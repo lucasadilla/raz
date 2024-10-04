@@ -1,4 +1,3 @@
-// Step 4: Add specific SEO tags to individual pages
 // pages/About.js
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
