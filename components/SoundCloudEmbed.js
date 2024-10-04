@@ -5,7 +5,7 @@ const SoundCloudEmbed = ({ src, title }) => {
     return (
         <div>
             <iframe
-                width="100%"
+                width="110%"
                 height="166"
                 scrolling="no"
                 frameBorder="no"

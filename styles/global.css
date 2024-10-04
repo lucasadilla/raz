@@ -254,15 +254,20 @@ html, body {
 }
 
 .media-item {
-    background-color: #f7d89c;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 550px; /* Set a fixed width */
+    height: 500px; /* Set a fixed height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 5px 4px 1px rgb(13, 31, 58);
+    border: 2px solid #0e233c;
     border-radius: 8px;
-    transition: transform 0.3s ease;
     text-align: center;
-    text-decoration: none;
-    color: inherit;
+    background-color: #f7d89c;
+    margin: 1rem;
+    margin-top: 2rem;
 }
 
 .media-item:hover {
@@ -281,12 +286,22 @@ html, body {
     margin-bottom: 10px;
 }
 
+.media-item img[src*="APA.jpg"],
+.media-item img[src*="cornell.png"],
+.media-item img[src*="feedback.jpg"],
+.media-item img[src*="chapraz.png"],
+.media-item img[src*="theatre.jpg"] {
+    max-width: 60%;
+    max-height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+    border-radius: 8px; /* Maintain the rounded corners */
+}
+
 .media-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px; /* Rounded corners for images */
-    margin-bottom: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+    border-radius: 8px;
 }
 
 .media-item a {
@@ -301,7 +316,7 @@ html, body {
 }
 
 .media-item h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #000000;
     margin-bottom: 10px;
 }
@@ -999,10 +1014,10 @@ html, body {
 }
 
 .media-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .recent-media-banner {
@@ -1026,6 +1041,7 @@ html, body {
     overflow: hidden;
     width: calc(33.333% - 20px);
     transition: transform 0.2s;
+    box-shadow: 5px 6px 1px rgb(13, 31, 55);
 }
 
 .media-card:hover {
@@ -1128,6 +1144,12 @@ html, body {
 }
 
 @media (max-width: 768px) {
+
+    .media-item {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Adjust height to content */
+        margin: 0.5rem; /* Smaller margin */
+    }
 
     .slideshow-image {
         width: 100%; /* Makes images responsive */
