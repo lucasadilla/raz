@@ -33,10 +33,33 @@ const Media = () => {
                 image: "/images/media/bbc.jpg"
             },
             {
+                date: "April, 2021",
+                url: "https://www.boxofficepro.com/coolidge-corner-theatre-science-on-screen-series/",
+                title: "Coolidge Corner Theatre’s ‘Science on Screen’ Series Gives Reality a Voice in the Misinformation Age",
+                image: "/images/media/theatre.jpg"
+            },
+            {
+                date: "January, 2021",
+                url: "https://www.sciencedaily.com/releases/2021/01/210127171840.htm#:~:text=Summary%3A,gaps'%20of%20missing%20visual%20cues.",
+                title: "Hypnotic suggestions can make a complex task easy by helping vision fill in the blanks",
+                image: "/images/media/mind.png"
+            },
+            {
+                date: "December, 2020",
+                url: "https://www.freethink.com/science/experiment-design",
+                title: "Want better science? Learn how to lie (with magic).",
+                image: "/images/media/design.png"
+            },
+            {
                 date: "October, 2020",
                 url: "https://news.chapman.edu/2020/10/15/brain-institute-researcher-finds-that-difficult-becomes-easy-thanks-to-hypnotic-suggestion/",
                 title: "Brain Institute Researcher Finds That Difficult Becomes Easy Thanks to Hypnotic Suggestion",
                 image: "/images/media/raz.jpg"
+            },
+            {
+                date: "July, 2020",
+                content: <VideoEmbed src="https://player.vimeo.com/video/436234481?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="The Body-Swap Illusion: Investigation at the Raz Lab" />,
+                title: "The Body-Swap Illusion: Investigation at the Raz Lab"
             },
             {
                 date: "February, 2020",
@@ -52,9 +75,14 @@ const Media = () => {
             },
             {
                 date: "June, 2018",
-                url: "https://www.bbc.co.uk/programmes/p069jncp",
-                title: "BBC Program",
+                url: "https://www.bbc.co.uk/sounds/play/p069jncp",
+                title: "What’s the difference between stage and clinical hypnosis?",
                 image: "/images/media/clock.jpg"
+            },
+            {
+                date: "April, 2017",
+                content: <VideoEmbed src="https://player.vimeo.com/video/266510840?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="The Science of Magic Press Screener" />,
+                title: "The Science of Magic Press Screener"
             },
             {
                 date: "April, 2018",
@@ -63,7 +91,7 @@ const Media = () => {
             },
             {
                 date: "July, 2017",
-                content: <VideoEmbed src="https://www.youtube.com/embed/3evqptjrGGs" title="YouTube Video" />,
+                content: <VideoEmbed src="https://www.youtube.com/embed/3evqptjrGGs" title="Exploring the Power of Suggestion" />,
                 title: "Exploring the Power of Suggestion"
             },
             {
@@ -80,6 +108,11 @@ const Media = () => {
                 date: "June, 2017",
                 content: <SoundCloudEmbed src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/330276021&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" title="Hypnosis in medicine: no chickens involved" />,
                 title: "Hypnosis in Medicine: No Chickens Involved"
+            },
+            {
+                date: "May, 2017",
+                content: <VideoEmbed src="https://player.vimeo.com/video/216925134?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="Raz Lab Neurofeedback Interview" />,
+                title: "Raz Lab Neurofeedback Interview"
             },
             {
                 date: "May, 2017",
@@ -107,10 +140,65 @@ const Media = () => {
                 title: "CBC AM Dr. Amir Raz Discusses"
             },
             {
+                date: "March, 2017",
+                url: "https://www.mcgill.ca/oss/article/interviews-experts/under-hypnosis-dr-raz",
+                title: "Under Hypnosis with Dr. Raz",
+                image: "/images/media/text.jpg"
+            },
+            {
+                date: "March, 2017",
+                url: "https://www.tvo.org/video/placebo-effective",
+                title: "Placebo Effective",
+                image: "/images/media/effective.png"
+            },
+            {
+                date: "December, 2016",
+                content: <VideoEmbed src="https://player.vimeo.com/video/209325612?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="The Rubber Hand Illusion: Investigation at the Raz Lab" />,
+                title: "The Rubber Hand Illusion: Investigation at the Raz Lab"
+            },
+            {
+                date: "November, 2016",
+                content: <VideoEmbed src="https://player.vimeo.com/video/190571359?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="RazLab Posture" />,
+                title: "RazLab Posture"
+            },
+            {
                 date: "September, 2016",
                 url: "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2016.01358/full",
                 title: "Frontiers in Psychology Article",
                 image: "/images/media/psych.jpg"
+            },
+            {
+                date: "June, 2016",
+                url: "https://www.mcgill.ca/newsroom/fr/channels/news/neurofeedback-effet-placebo-261120",
+                title: "Neurofeedback : effet placebo?",
+                image: "/images/media/feedback.jpg"
+            },
+            {
+                date: "May, 2016",
+                url: "https://lareviewofbooks.org/article/eager-hear-placebo-speak/",
+                title: "Why Are We So Eager to Hear “Placebo” Speak?",
+                image: "/images/media/pills.png"
+            },
+            {
+                date: "November, 2015",
+                content: <VideoEmbed src="https://www.youtube.com/embed/pfvBNIRRsg4?si=cxI9DNZzKdt-fERm" title="McGill Talks Episode 7 Prescriptions and Placebos" />,
+                title: "McGill Talks Episode 7 Prescriptions and Placebos"
+            },
+            {
+                date: "January, 2015",
+                content: <VideoEmbed src="https://www.youtube.com/embed/Nu32TFpcYOk?si=0fMN4eLXmS7mszqw" title="JGH TV - Doctors on wheels" />,
+                title: "JGH TV - Doctors on wheels"
+            },
+            {
+                date: "July, 2014",
+                content: <VideoEmbed src="https://player.vimeo.com/video/117024196?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="The Raz Lab in Brain Magic: The Power of Placebo — CBC Documentary" />,
+                title: "The Raz Lab in Brain Magic: The Power of Placebo — CBC Documentary"
+            },
+            {
+                date: "May, 2014",
+                url: "https://neurocritic.blogspot.com/2014/05/the-seductive-allure-of-spintronics.html",
+                title: "The Seductive Allure of Spintronics™ Neuroimaging mock mind reading scanner",
+                image: "/images/media/neuro.png"
             },
             {
                 date: "October, 2013",
@@ -119,14 +207,37 @@ const Media = () => {
                 image: "/images/media/magic.jpg"
             },
             {
-                date: "October, 2013",
-                content: <VideoEmbed src="https://player.vimeo.com/video/117024196?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="The Raz Lab in Brain Magic: The Power of Placebo — CBC Documentary" />,
-                title: "The Raz Lab in Brain Magic: The Power of Placebo — CBC Documentary"
+                date: "July, 2013",
+                content: <VideoEmbed src="https://player.vimeo.com/video/60670141?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="Brain Games - Hypnosis" />,
+                title: "Brain Games - Hypnosis"
             },
             {
-                date: "July, 2013",
+                date: "Jan, 2013",
                 content: <VideoEmbed src="https://www.youtube.com/embed/vLAvoaln8oU" title="YouTube Video" />,
                 title: "Neural Correlates of Altered Consciousness"
+            },
+            {
+                date: "Jan, 2012",
+                url: "https://medium.com/skeptikai/hypnosis-the-power-of-suggestion-and-the-science-of-hypnotherapy-429b187a12fb",
+                title: "Hypnosis, the Power of Suggestion, and the Science of Hypnotherapy\n",
+                image: "/images/media/glasses.jpg"
+            },
+            {
+                date: "July, 2011",
+                content: <VideoEmbed src="https://www.youtube.com/embed/5Q7CoqFud5s?si=f-CTsbUkc5mQ16yk" title="BBC - Alternative Therapies - Hypnotherapy" />,
+                title: "BBC - Alternative Therapies - Hypnotherapy"
+            },
+            {
+                date: "May, 2011",
+                url: "https://www.bbc.com/mundo/noticias/2011/05/110513_placebos_efectivos_men#:~:text=Cada%20vez%20m%C3%A1s%20m%C3%A9dicos%20%2Dprincipalmente,que%20los%20placebos%20tienen%20beneficios.",
+                title: "El \"sorprendente\" poder de los placebos",
+                image: "/images/media/drug.jpg"
+            },
+            {
+                date: "May, 2011",
+                url: "https://www.theglobeandmail.com/life/health-and-fitness/one-in-five-mds-have-prescribed-placebos/article580390/",
+                title: "One in five MDs have prescribed placebos",
+                image: "/images/media/md.jpg"
             },
             {
                 date: "October, 2008",
