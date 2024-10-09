@@ -35,10 +35,10 @@ export default function Contact() {
             });
 
             if (!response.ok) {
-                if (response.status === 404) {
-                    throw new Error('API endpoint not found');
-                }
-                throw new Error('Network response was not ok');
+                const errorText = await response.text();
+                console.error('Failed to send email:', response.status, response.statusText, errorText);
+                alert(`Error sending email: ${response.status} ${response.statusText} - ${errorText}`);
+                return;
             }
 
             const result = await response.json();

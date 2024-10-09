@@ -40,9 +40,17 @@ const Slideshow = () => {
                 />
             ))}
             <div className="banner-text">
-                <div className="banner-subtext">Psychiatry, Neurology, Neurosurgery, and Psychology</div>
-                AMIR RAZ
                 <div className="banner-subtext">
+                    <span>
+                        Psychiatry <br/>
+                        Neurology <br/>
+                        Neurosurgery <br/>
+                        Psychology <br/>
+                    </span>
+
+                </div>
+                AMIR RAZ
+                <div className="banner-subsubtext">
                     <Link href="/About">
                         <span className="about-index">ABOUT AMIR RAZ</span>
                     </Link>

@@ -4,8 +4,8 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'amirrazofficialwebsite@gmail.com',
-        pass: 'xitu plth velh vyko'
+        user: 'jargon.website.mailer@gmail.com',
+        pass: 'bwzo goju titq poky'
     }
 });
 
@@ -16,7 +16,7 @@ const sendMail = (req, res) => {
 
             const mailOptions = {
                 from: 'amirrazofficialwebsite@gmail.com',
-                to: 'ProfDrAmirRaz@gmail.com',
+                to: 'profdramirraz@gmail.com',
                 subject: subject || 'No Subject',
                 text: `
                     Name: ${name}

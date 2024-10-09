@@ -180,7 +180,7 @@ html, body {
 }
 
 .footer-link {
-    color: #ffcc00;
+    color: #FFDF61;
     text-decoration: none;
 }
 
@@ -889,8 +889,9 @@ html, body {
 }
 
 .about-index {
+    font-size: 1.5rem; /* Adjust the size as needed */
     color: #ffffff; /* Initial color */
-    transition: color 0.3s; /* Smooth transition for color change */
+    transition: color 0.3s;
 }
 
 .about-index:hover {
@@ -904,7 +905,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Arial, sans-serif;
+    font-family:  sans-serif;
 }
 
 .page-content-wrap {
@@ -1077,8 +1078,8 @@ html, body {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #0061c2;
-    color: #d8d8da;
+    background-color: #004085;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -1087,7 +1088,7 @@ html, body {
 }
 
 .more-media-button:hover {
-    background-color: #1d3b66;
+    background-color: #10213e;
 }
 
 .media-image {
@@ -1464,13 +1465,64 @@ html, body {
     transform: translate(-50%, -50%);
     color: #ffffff;
     text-align: center;
-    font-size: 4.5rem; /* Adjust font size as needed */
-    width: 35%; /* Adjust width as needed */
+    font-size: 4.5rem;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.9;
 }
 
 .banner-subtext {
-    font-size: 1.5rem; /* Adjust font size as needed */
-    margin-bottom: 0.5rem; /* Adjust margin as needed */
+    font-size: 1.75rem; /* Adjust font size as needed */
+    margin-bottom: 0.1rem; /* Adjust margin as needed */
+    font-weight: bold;
+    border: 0px solid #ddd;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.banner-subtext span {
+    position: relative;
+    animation: animation 10s ease infinite;
+}
+
+@keyframes animation {
+    0%,
+    100% {
+        top: 0;
+        color: #9163dd;
+    }
+    20% {
+        top: 0;
+        color: #9163dd;
+    }
+    25% {
+        top: -50px;
+        color: #df5b7b;
+    }
+    45% {
+        top: -50px;
+        color: #df5b7b;
+    }
+    50% {
+        top: -100px;
+        color: orange;
+    }
+    70% {
+        top: -100px;
+        color: orange;
+    }
+    75% {
+        top: -150px;
+        color: #60c9dc;
+    }
+    95% {
+        top: -150px;
+        color: #60c9dc;
+    }
 }
 
 .scroll-down-arrow {
