@@ -3,9 +3,9 @@ import React from 'react';
 
 const SoundCloudEmbed = ({ src, title }) => {
     return (
-        <div>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
             <iframe
-                width="110%"
+                width="500"
                 height="166"
                 scrolling="no"
                 frameBorder="no"
@@ -24,8 +24,6 @@ const SoundCloudEmbed = ({ src, title }) => {
                 fontFamily: 'Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif',
                 fontWeight: 100
             }}>
-                <a href="https://soundcloud.com/razlab" title="the Raz Lab" target="_blank" style={{ color: '#cccccc', textDecoration: 'none' }}>the Raz Lab</a> ·
-                <a href={src} title={title} target="_blank" style={{ color: '#cccccc', textDecoration: 'none' }}>{title}</a>
             </div>
         </div>
     );

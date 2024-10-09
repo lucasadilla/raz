@@ -12,6 +12,11 @@ const Media = () => {
     useEffect(() => {
         setMedia([
             {
+                date: "September, 2024",
+                content: <SoundCloudEmbed src="https://omny.fm/shows/cjad-800/the-dr-joe-show-the-suggestible-brain/embed?in_playlist=the-dr-joe-show&style=Cover&t=0s" title="The Dr. Joe Show: The suggestible brain" />,
+                title: "The Dr. Joe Show: The suggestible brain"
+            },
+            {
                 date: "October, 2022",
                 url: "https://www.msch.us/education/2022-rosenthal-with-amir-raz/",
                 title: "Rosenthal with Amir Raz",

@@ -8,9 +8,9 @@ const PageTitle = () => {
     const titles = {
         '/': 'Home',
         '/About': 'Learn More About Me',
-        '/Publications': 'Publication Highlights',
+        '/Publications': 'Highlights',
         '/Books': 'Discover My Writing',
-        '/Media': 'Media Highlights',
+        '/Media': 'Samples',
         '/search': 'Search Results ',
         '/Contact': 'Let Me Hear From You!',
         '/invite': 'Services Provided',
