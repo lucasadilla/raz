@@ -1769,7 +1769,7 @@ html, body {
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.68);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     text-align: center;
@@ -1777,5 +1777,5 @@ html, body {
 }
 
 .invite-button:hover {
-    background-color: #005bb5;
+    background-color: #f4b63e;
 }

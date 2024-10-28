@@ -40,7 +40,7 @@ const Books = () => {
                                                                                                                                                       alt="Buy Now"/></a></p>
                         <p className="book-buy-image"><a href="https://www.hachettebookgroup.com/titles/amir-raz-phd/the-suggestible-brain/9780306833434/?lens=hachette-go"><img src="/images/books/logos/hachette.png"
                                                                                                                                                                                  alt="Buy Now"/></a></p>
-                        <p className="book-buy-image"><a href="https://www.hachettespeakersbureau.com/titles/amir-raz-phd/the-suggestible-brain/9781668644799/"><img src="/images/books/logos/hachette-audio.png"
+                        <p className="book-buy-image"><a href="https://www.hachettebookgroup.com/titles/amir-raz-phd/the-suggestible-brain/9781668644799/?lens=hachette-go"><img src="/images/books/logos/hachette-audio.png"
                                                                                                                                                                      alt="Buy Now"/></a></p>
                     </div>
                 </div>

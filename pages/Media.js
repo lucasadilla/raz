@@ -12,6 +12,11 @@ const Media = () => {
     useEffect(() => {
         setMedia([
             {
+                date: "October, 2024",
+                content: <VideoEmbed src="https://www.youtube.com/embed/JgLQPxrOb8g?si=2qaQRGBwTrTOCymX" title="Dr. Amir Raz | The Suggestible Brain | Talks at Google" />,
+                title: "Dr. Amir Raz | The Suggestible Brain | Talks at Google"
+            },
+            {
                 date: "September, 2024",
                 content: <SoundCloudEmbed src="https://omny.fm/shows/cjad-800/the-dr-joe-show-the-suggestible-brain/embed?in_playlist=the-dr-joe-show&style=Cover&t=0s" title="The Dr. Joe Show: The suggestible brain" />,
                 title: "The Dr. Joe Show: The suggestible brain"

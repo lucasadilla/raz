@@ -15,8 +15,8 @@ const publications = [
 
 const media = [
     { title: "When can deception be good for you? | Amir Raz | TEDxMontreal", source: "", link: "https://www.youtube.com/embed/XcUGHTEVgk0?si=oe_leeIvzR7iPwuN", video:"https://www.youtube.com/embed/XcUGHTEVgk0?si=oe_leeIvzR7iPwuN" },
-    { title: "Amir Raz on the Science of Suggestion", source: "", link: "https://news.chapman.edu/2021/12/15/chapmans-brain-institute-applies-modern-tools-of-neuroscience-to-answer-age-old-questions-of-free-will/", image: "/images/media/chapman.jpg" },
-    { title: "Finding Your Soul Podcast", source: "", link: "https://www.youtube.com/embed/vg540H9uHuA", video:"https://www.youtube.com/embed/vg540H9uHuA" },
+    { title: "Dr. Amir Raz | The Suggestible Brain | Talks at Google\n", source: "", link: "https://www.youtube.com/embed/JgLQPxrOb8g?si=X6VeFolzpC9Vjivv", video:"https://www.youtube.com/embed/JgLQPxrOb8g?si=X6VeFolzpC9Vjivv" },
+    { title: "The Raz Lab in Brain Magic: The Power of Placebo — CBC Documentary", source: "", link: "https://player.vimeo.com/video/117024196?h=49143d98c4", video:"https://player.vimeo.com/video/117024196?h=49143d98c4" }
 ];
 
 export default function Home() {
