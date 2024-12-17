@@ -12,9 +12,24 @@ const Media = () => {
     useEffect(() => {
         setMedia([
             {
+                date: "December, 2024",
+                content: <VideoEmbed src="https://www.youtube.com/embed/8NE96DissZM?si=HsbYPlWQxouROY9b" title="The Science of Suggestion: Who Can You Trust?" />,
+                title: "The Science of Suggestion: Who Can You Trust?"
+            },
+            {
+                date: "November, 2024",
+                content: <VideoEmbed src="https://www.youtube.com/embed/PzEFLCzhTAA?si=WRFtmbfhW5Fyizna" title="The Suggestible Brain: The Science and Magic of How We Make Up Our Minds"/>,
+                title: "The Suggestible Brain: The Science and Magic of How We Make Up Our Minds"
+            },
+            {
                 date: "October, 2024",
                 content: <VideoEmbed src="https://www.youtube.com/embed/JgLQPxrOb8g?si=2qaQRGBwTrTOCymX" title="Dr. Amir Raz | The Suggestible Brain | Talks at Google" />,
                 title: "Dr. Amir Raz | The Suggestible Brain | Talks at Google"
+            },
+            {
+                date: "April, 2024",
+                content: <SoundCloudEmbed src="https://open.spotify.com/embed/episode/3klJpJ6W2hp53SPXmO6r6o?utm_source=generator" title="The Dr. Joe Show: The suggestible brain" />,
+                title: "Dr. Amir Raz - The suggestible brain - Center Point Radio"
             },
             {
                 date: "September, 2024",

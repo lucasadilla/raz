@@ -21,7 +21,7 @@ const Slideshow = () => {
     const handleScrollDown = () => {
         const section = document.getElementById('target-section');
         if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
+            section.scrollIntoView({behavior: 'smooth'});
         }
     };
 
@@ -30,15 +30,20 @@ const Slideshow = () => {
     };
 
     return (
-        <div className="slideshow">
-            {photos.map((photo, index) => (
-                <img
-                    key={index}
-                    src={photo}
-                    alt="Slideshow"
-                    className={`slideshow-image ${index === currentIndex ? 'active' : ''}`}
-                />
-            ))}
+        <div className="slideshow wrapper">
+            <div
+                className="slideshow-wrapper"
+                style={{transform: `translateX(-${currentIndex * 100}%)`}}
+            >
+                {photos.map((photo, index) => (
+                    <img
+                        key={index}
+                        src={photo}
+                        alt="Slideshow"
+                        className="slideshow-image"
+                    />
+                ))}
+            </div>
             <div className="banner-text">
                 <div className="banner-subtext">
                     <span>

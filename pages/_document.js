@@ -5,6 +5,7 @@ class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
+
                     <link rel="icon" href="/images/razLogo.png"/>
                     <link
                         rel="preconnect"
@@ -19,10 +20,23 @@ class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
                         rel="stylesheet"
                     />
+                    <script type="application/ld+json" dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "WebSite",
+                            "url": "https://www.amirraz.com",
+                            "name": "Amir Raz Official Website",
+                            "potentialAction": {
+                                "@type": "SearchAction",
+                                "target": "https://www.amirraz.com/search?query={search_term_string}",
+                                "query-input": "required name=search_term_string"
+                            }
+                        })
+                    }}/>
                 </Head>
                 <body>
                 <Main/>
-                <NextScript />
+                <NextScript/>
                 </body>
             </Html>
         );

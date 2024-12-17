@@ -14,9 +14,9 @@ const publications = [
 ];
 
 const media = [
-    { title: "When can deception be good for you? | Amir Raz | TEDxMontreal", source: "", link: "https://www.youtube.com/embed/XcUGHTEVgk0?si=oe_leeIvzR7iPwuN", video:"https://www.youtube.com/embed/XcUGHTEVgk0?si=oe_leeIvzR7iPwuN" },
-    { title: "Dr. Amir Raz | The Suggestible Brain | Talks at Google\n", source: "", link: "https://www.youtube.com/embed/JgLQPxrOb8g?si=X6VeFolzpC9Vjivv", video:"https://www.youtube.com/embed/JgLQPxrOb8g?si=X6VeFolzpC9Vjivv" },
-    { title: "The Raz Lab in Brain Magic: The Power of Placebo — CBC Documentary", source: "", link: "https://player.vimeo.com/video/117024196?h=49143d98c4", video:"https://player.vimeo.com/video/117024196?h=49143d98c4" }
+    { title: "Dr. Amir Raz | The Suggestible Brain | Talks at Google", source: "", link: "https://www.youtube.com/embed/JgLQPxrOb8g?si=X6VeFolzpC9Vjivv", video:"https://www.youtube.com/embed/JgLQPxrOb8g?si=X6VeFolzpC9Vjivv" },
+    { title: "The Science of Suggestion: Who Can You Trust?", source: "", link: "https://www.youtube.com/embed/8NE96DissZM?si=HsbYPlWQxouROY9b", video:"https://www.youtube.com/embed/8NE96DissZM?si=HsbYPlWQxouROY9b" },
+    { title: "When can deception be good for you? | Amir Raz | TEDxMontreal", source: "", link: "https://www.youtube.com/embed/XcUGHTEVgk0?si=oe_leeIvzR7iPwuN", video:"https://www.youtube.com/embed/XcUGHTEVgk0?si=oe_leeIvzR7iPwuN" }
 ];
 
 export default function Home() {
@@ -74,17 +74,23 @@ export default function Home() {
                 openGraph={{
                     url: 'https://www.amirraz.com',
                     title: 'Home - Amir Raz',
-                    description: 'Welcome to the official website of Amir Raz. Explore recent publications, media appearances, and more.',
+                    description: 'Explore Amir Raz’s research, books, media, and publications.',
                     images: [
                         {
                             url: 'https://www.amirraz.com/images/home/cover.png',
                             width: 800,
                             height: 600,
-                            alt: 'Home - Amir Raz',
+                            alt: 'Amir Raz Home',
                         },
                     ],
                     site_name: 'Amir Raz',
                 }}
+                additionalMetaTags={[
+                    { name: "keywords", content: "Amir Raz, science of suggestion, neuroscience, books, publications, research, professor" }
+                ]}
+                additionalLinkTags={[
+                    { rel: "canonical", href: "https://www.amirraz.com" }
+                ]}
             />
             <Navbar />
             <main className="main-content index-page">
