@@ -16,7 +16,7 @@ const sendMail = (req, res) => {
 
             const mailOptions = {
                 from: 'lucasadilla1@gmail.com',
-                to: 'lucas.pentlandhyde@gmail.com',
+                to: 'profdramirraz@gmail.com',
                 subject: subject || 'No Subject',
                 text: `
                     Name: ${name}
