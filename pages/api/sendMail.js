@@ -16,7 +16,7 @@ const sendMail = (req, res) => {
 
             const mailOptions = {
                 from: 'lucasadilla1@gmail.com',
-                to: 'profdramirraz@gmail.com',
+                to: 'lucas.pentlandhyde@gmail.com',
                 subject: subject || 'No Subject',
                 text: `
                     Name: ${name}
@@ -32,7 +32,7 @@ const sendMail = (req, res) => {
                 if (error) {
                     return res.status(500).json({ message: 'Error sending email', error });
                 }
-                res.status(200).json({ message: 'Email sent successfully', info });
+                res.status(200).json({ message: 'Thank you for your message', info });
             });
         } catch (error) {
             res.status(400).json({ message: 'Invalid JSON', error });
