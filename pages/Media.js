@@ -13,6 +13,12 @@ const Media = () => {
         setMedia([
             {
                 date: "December, 2024",
+                url: "https://www.cbc.ca/listen/live-radio/1-51-quirks-and-quarks/clip/16117173-easily-influenced-why-human-mind-built-suggestible",
+                title: "Quirks and Quarks: Easily influenced: Why and how the human mind is built to be suggestible",
+                image: "/images/articles/Bob_McDonald-web.jpg"
+            },
+            {
+                date: "December, 2024",
                 content: <VideoEmbed src="https://www.youtube.com/embed/8NE96DissZM?si=HsbYPlWQxouROY9b" title="The Science of Suggestion: Who Can You Trust?" />,
                 title: "The Science of Suggestion: Who Can You Trust?"
             },
